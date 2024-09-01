@@ -21,4 +21,10 @@ As a general rule, keep 1 label to 1 file. It's ok to group several intimately t
 Try not to store anything in the top level directories. Organize assets and .rpy files in directories grouped by type, then context as much as possible.
 
 # Build
-Still working on build workflow. Most likely, there will be a .sh script that can be used to create the Windows, macOS, and web versions. It will also tick up the revision and possibly the version.
+Still working on build workflow. Most likely, there will be a .sh script that can be used to create the Windows, macOS, and web versions. Looking into github actions to tick up the version and maybe even create the binaries and upload to itch.io.
+
+## Development Builds
+For most development, pressing Play in the Ren'Py launcher is sufficient.
+
+## Releases
+Create a Release tag of the intended version. For instance, `release/0.1.0`.
