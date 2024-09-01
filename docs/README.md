@@ -1,9 +1,9 @@
 # About
 This game is a submission to the [Spooktober 6th Annual Visual Novel Jam](https://itch.io/jam/spooktober-2024).
 
-[Our Roadmap](docs/ROADMAP.md)
+[GDD](GDD.md)
 
-[Our GDD](docs/GDD.md)
+[Roadmap](ROADMAP.md)
 
 # Contributing
 Contributions should be limited to game jam members. If you're interested in contributing, contact the repository owner.
