@@ -2,6 +2,7 @@
 This game is a submission to the [Spooktober 6th Annual Visual Novel Jam](https://itch.io/jam/spooktober-2024).
 
 [Our Roadmap](docs/ROADMAP.md)
+
 [Our GDD](docs/GDD.md)
 
 # Contributing
