@@ -1,5 +1,5 @@
 label game_rps:
-    show gameria_smile
+    show gameria  smile
 
     menu:
         g "Let's play rock paper scissors!"
@@ -10,7 +10,7 @@ label game_rps:
         "What's my record?":
             jump game_rps_record
         "Other games":
-            jump tutorial
+            jump tutorial_games
 
 label game_rps_rules:
     g "It's simple. Choose rock, paper, or scissors, and try to beat me!"
@@ -18,16 +18,16 @@ label game_rps_rules:
 
 label game_rps_record:
     if rps_wins == 0 and rps_losses == 0:
-        show gameria_smile
+        show gameria  smile
         g "We haven't played yet silly!"
     elif rps_wins == rps_losses:
-        show gameria_annoyed
+        show gameria  annoyed
         g "We're tied at [rps_wins]. For now..."
     elif rps_wins > rps_losses:
-        show gameria_annoyed
+        show gameria  annoyed
         g "Ugh. You're winning [rps_wins] to [rps_losses]. I guess."
     else:
-        show gameria_smug
+        show gameria  smug
         g "I'm up [rps_losses] to [rps_wins], naturally!"
     jump game_rps
 
@@ -36,6 +36,12 @@ label game_rps_play_start:
 
 label game_rps_play:
     $g_choice = renpy.random.choice(['r', 'p', 's'])
+    if g_choice == "r":
+        show gameria smile
+    elif g_choice == "p":
+        show gameria happy
+    elif g_choice == "s":
+        show gameria smug
     menu:
         g "Rock. Paper. Scissors. SHOOT!"
         "Rock":
@@ -46,7 +52,7 @@ label game_rps_play:
             $selection = "s"
 
     if g_choice == selection:
-        show gameria_smile
+        show gameria  smile
         g "A tie! Let's go again!"
         jump game_rps_play
 
@@ -67,13 +73,13 @@ label game_rps_play:
             jump game_rps_win
 
 label game_rps_loss:
-    show gameria_delighted
+    show gameria  happy
     g "YES! I WIN! I AM THE GREATEST!"
     $rps_losses += 1
     jump game_rps
 
 label game_rps_win:
-    show gameria_annoyed
+    show gameria  annoyed
     g "Ugh. You got lucky."
     $rps_wins += 1
     jump game_rps

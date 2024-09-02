@@ -10,6 +10,8 @@ label start:
     define g = Character("Gameria")
     define c = Character("Converso")
 
+    $flags = {}
+
     default rps_wins = 0
     default rps_losses = 0
 
