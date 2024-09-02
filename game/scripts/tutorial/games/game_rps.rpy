@@ -1,6 +1,8 @@
 label game_rps:
+    show gameria_smile
+
     menu:
-        g "Let's play!"
+        g "Let's play rock paper scissors!"
         "Play":
             jump game_rps_play_start
         "How to play":
@@ -15,11 +17,21 @@ label game_rps_rules:
     jump game_rps
 
 label game_rps_record:
-    g "I don't know, was I supposed to be keeping track?"
+    if rps_wins == 0 and rps_losses == 0:
+        show gameria_smile
+        g "We haven't played yet silly!"
+    elif rps_wins == rps_losses:
+        show gameria_annoyed
+        g "We're tied at [rps_wins]. For now..."
+    elif rps_wins > rps_losses:
+        show gameria_annoyed
+        g "Ugh. You're winning [rps_wins] to [rps_losses]. I guess."
+    else:
+        show gameria_smug
+        g "I'm up [rps_losses] to [rps_wins], naturally!"
     jump game_rps
 
 label game_rps_play_start:
-    g "Let's do this!"
     jump game_rps_play
 
 label game_rps_play:
@@ -34,6 +46,7 @@ label game_rps_play:
             $selection = "s"
 
     if g_choice == selection:
+        show gameria_smile
         g "A tie! Let's go again!"
         jump game_rps_play
 
@@ -54,11 +67,13 @@ label game_rps_play:
             jump game_rps_win
 
 label game_rps_loss:
+    show gameria_delighted
     g "YES! I WIN! I AM THE GREATEST!"
     $rps_losses += 1
     jump game_rps
 
 label game_rps_win:
+    show gameria_annoyed
     g "Ugh. You got lucky."
     $rps_wins += 1
     jump game_rps

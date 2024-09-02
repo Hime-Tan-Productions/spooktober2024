@@ -8,9 +8,17 @@
 label start:
     define t = Character("Tutoriella")
     define g = Character("Gameria")
+    define c = Character("Converso")
+
     default rps_wins = 0
     default rps_losses = 0
 
-    scene bg panorama
+    default coinflip_wins = 0
+    default coinflip_losses = 0
+
+    default numberguess_wins = 0
+    default numberguess_losses = 0
+
+    scene bg_street
 
     jump tutorial
