@@ -1,12 +1,7 @@
 label conv_story:
     show converso smile_1
     $beatdown = False
-    if coinflip_wins >= 3 and coinflip_wins >= coinflip_losses * 3:
-        $beatdown = True
-    if rps_wins >= 3 and rps_wins >= rps_losses * 3:
-        $beatdown = True
-    if numberguess_wins >= 3 and numberguess_wins >= numberguess_losses * 3:
-        $beatdown = True
+#check if winning streak is 5 or greater
     if beatdown == True:
         c "Whoa, you're really beating her! OK, here's a story..."
         jump conv_story_2

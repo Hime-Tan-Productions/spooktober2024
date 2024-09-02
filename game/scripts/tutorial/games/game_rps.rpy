@@ -7,28 +7,11 @@ label game_rps:
             jump game_rps_play_start
         "How to play":
             jump game_rps_rules
-        "What's my record?":
-            jump game_rps_record
         "Other games":
             jump tutorial_games
 
 label game_rps_rules:
     g "It's simple. Choose rock, paper, or scissors, and try to beat me!"
-    jump game_rps
-
-label game_rps_record:
-    if rps_wins == 0 and rps_losses == 0:
-        show gameria  smile
-        g "We haven't played yet silly!"
-    elif rps_wins == rps_losses:
-        show gameria  annoyed
-        g "We're tied at [rps_wins]. For now..."
-    elif rps_wins > rps_losses:
-        show gameria  annoyed
-        g "Ugh. You're winning [rps_wins] to [rps_losses]. I guess."
-    else:
-        show gameria smug at left
-        g "I'm up [rps_losses] to [rps_wins], naturally!"
     jump game_rps
 
 label game_rps_play_start:
@@ -75,11 +58,11 @@ label game_rps_play:
 label game_rps_loss:
     show gameria happy at left
     g "YES! I WIN! I AM THE GREATEST!"
-    $rps_losses += 1
+    $winning_streak = 0
     jump game_rps
 
 label game_rps_win:
     show gameria annoyed at left
     g "Ugh. You got lucky."
-    $rps_wins += 1
+    $winning_streak += 1
     jump game_rps
