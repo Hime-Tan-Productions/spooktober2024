@@ -44,8 +44,6 @@ label game_coinflip_play:
     elif img == 3:
         show gameria smile
 
-
-    show img
     menu:
         g "Call it in the air!"
         "Heads":
