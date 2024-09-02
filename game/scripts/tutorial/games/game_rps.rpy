@@ -27,7 +27,7 @@ label game_rps_record:
         show gameria  annoyed
         g "Ugh. You're winning [rps_wins] to [rps_losses]. I guess."
     else:
-        show gameria  smug
+        show gameria smug at left
         g "I'm up [rps_losses] to [rps_wins], naturally!"
     jump game_rps
 
@@ -37,11 +37,11 @@ label game_rps_play_start:
 label game_rps_play:
     $g_choice = renpy.random.choice(['r', 'p', 's'])
     if g_choice == "r":
-        show gameria smile
+        show gameria smile at left
     elif g_choice == "p":
-        show gameria happy
+        show gameria happy at left
     elif g_choice == "s":
-        show gameria smug
+        show gameria smug at left
     menu:
         g "Rock. Paper. Scissors. SHOOT!"
         "Rock":
@@ -73,13 +73,13 @@ label game_rps_play:
             jump game_rps_win
 
 label game_rps_loss:
-    show gameria  happy
+    show gameria happy at left
     g "YES! I WIN! I AM THE GREATEST!"
     $rps_losses += 1
     jump game_rps
 
 label game_rps_win:
-    show gameria  annoyed
+    show gameria annoyed at left
     g "Ugh. You got lucky."
     $rps_wins += 1
     jump game_rps

@@ -1,7 +1,7 @@
 label tutorial_games:
     scene bg_temple
 
-    show gameria smile
+    show gameria smile at left
 
     g "Welcome to the game area! What do you wanna play?"
 
@@ -13,7 +13,7 @@ label tutorial_games:
         "Guess the number.":
             jump game_numberguess
         "Start our win/loss record over" if coinflip_losses > 3 or numberguess_losses > 3 or rps_losses > 3:
-            show gameria smug
+            show gameria smug at left
             g "Embarrassed about all the losses you've racked up? You should be! Fine, we'll start over from the beginning."
             $rps_wins = 0
             $rps_losses = 0

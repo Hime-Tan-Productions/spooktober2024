@@ -1,6 +1,6 @@
 label tutorial_conversation:
     scene bg_busstop
-    show converso smile_2
+    show converso smile_2 at left
     menu:
         c "What shall we talk about?"
         "Tell me a story.":
@@ -26,24 +26,24 @@ label conv_bus_1:
     jump tutorial_conversation
 
 label conv_bus_2:
-    show converso surprised
+    show converso surprised at left
     "Somewhere far away."
     $flags["converso far_away"] = 1
     jump tutorial_conversation
 
 label conv_bus_3:
-    show converso sad
+    show converso sad at left
     "Gameria's gonna kill me."
     $flags["converso why"] = 1
     jump tutorial_conversation
 
 label conv_bus_4:    
-    show converso angry
+    show converso angry at left
     "I figured out her tell for one of her games."
     $flags["converso tell"] = 1
     jump tutorial_conversation
 
 label conv_bus_5:
-    show converso smile_3
+    show converso smile_3 at left
     "She gives away which hand she'll throw in rock paper scissors. Watch her face! Now quit asking about it - I've already said too much!"
     jump tutorial_conversation
