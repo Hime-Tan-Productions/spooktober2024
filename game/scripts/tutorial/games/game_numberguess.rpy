@@ -2,7 +2,7 @@ label game_numberguess:
     show gameria smile at left
 
     menu:
-        g "Let's play flip the coin!"
+        g "Let's play guess what number is behind my back!"
         "Play":
             jump game_numberguess_play_start
         "How to play":
