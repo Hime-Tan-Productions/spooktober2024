@@ -3,7 +3,7 @@ label tutorial_games:
 
     show gameria smile at left
 
-    g "Welcome to the game area! What do you wanna play?"
+    g "I AM THE GAME MASTER! TRY TO DEFEAT ME!"
 
     menu:
         "Flip a coin.":
