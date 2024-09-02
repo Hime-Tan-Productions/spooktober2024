@@ -1,8 +1,6 @@
 label conv_story:
     show converso smile_1
-    $beatdown = False
-#check if winning streak is 5 or greater
-    if beatdown == True:
+    if winning_streak >= 5:
         c "Whoa, you're really beating her! OK, here's a story..."
         jump conv_story_2
     else:
