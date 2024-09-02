@@ -4,7 +4,7 @@ label conv_story:
         c "Whoa, you're really beating her! OK, here's a story..."
         jump conv_story_2
     else:
-        c "Maybe once you've beat Gameria at a 3:1 ratio in one of her games."
+        c "Maybe once you've beat Gameria 5 times in a row with a successful winning streak, I'll tell you the greatest story you've ever heard in your life."
         jump tutorial_conversation
 
 
