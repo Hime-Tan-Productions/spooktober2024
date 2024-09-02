@@ -12,6 +12,8 @@ label start:
 
     $flags = {}
 
+    default beatdown = False
+
     default rps_wins = 0
     default rps_losses = 0
 
