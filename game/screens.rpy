@@ -207,8 +207,9 @@ style input:
 
 screen choice(items):
     style_prefix "choice"
-
     vbox:
+        xalign 0.75
+
         for i in items:
             textbutton i.caption action i.action
 
