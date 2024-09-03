@@ -14,14 +14,7 @@ label start:
 
     default beatdown = False
 
-    default rps_wins = 0
-    default rps_losses = 0
-
-    default coinflip_wins = 0
-    default coinflip_losses = 0
-
-    default numberguess_wins = 0
-    default numberguess_losses = 0
+    default winning_streak = 0
 
     scene bg_street
 

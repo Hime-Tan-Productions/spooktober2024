@@ -1,17 +1,10 @@
 label conv_story:
     show converso smile_1
-    $beatdown = False
-    if coinflip_wins >= 3 and coinflip_wins >= coinflip_losses * 3:
-        $beatdown = True
-    if rps_wins >= 3 and rps_wins >= rps_losses * 3:
-        $beatdown = True
-    if numberguess_wins >= 3 and numberguess_wins >= numberguess_losses * 3:
-        $beatdown = True
-    if beatdown == True:
+    if winning_streak >= 5:
         c "Whoa, you're really beating her! OK, here's a story..."
         jump conv_story_2
     else:
-        c "Maybe once you've beat Gabriella at a 3:1 ratio in one of her games."
+        c "Maybe once you've beat Gabriella 5 times in a row with a successful winning streak, I'll tell you the greatest story you've ever heard in your life."
         jump tutorial_conversation
 
 

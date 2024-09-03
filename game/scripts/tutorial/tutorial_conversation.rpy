@@ -2,7 +2,7 @@ label tutorial_conversation:
     scene bg_busstop
     show converso smile_2 at left
     menu:
-        c "What shall we talk about?"
+        c "Sup?"
         "Tell me a story.":
             jump conv_story
         "What are you doing today?" if "converso bus" not in flags:

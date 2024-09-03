@@ -7,7 +7,7 @@ label game_coinflip:
             jump game_coinflip_play_start
         "How to play":
             jump game_coinflip_rules
-        "What's my record?":
+        "What's my winning streak?":
             jump game_coinflip_record
         "Other games":
             jump tutorial_games
@@ -17,19 +17,17 @@ label game_coinflip_rules:
     jump game_coinflip
 
 label game_coinflip_record:
-    if coinflip_wins == 0 and coinflip_losses == 0:
+    if winning_streak == 0 and winning_streak == 0:
         show gameria smile at left
-        g "We haven't played yet silly!"
-    elif coinflip_wins == coinflip_losses:
+        g "Currently... 0"
+    elif winning_streak > 0:
         show gameria annoyed at left
-        g "We're tied at [coinflip_wins]. For now..."
-    elif coinflip_wins > coinflip_losses:
-        show gameria annoyed at left
-        g "Ugh. You're winning [coinflip_wins] to [coinflip_losses]. I guess."
+        g "Ugh. Your winning streak is [winning_streak]."
     else:
         show gameria smug
-        g "I'm up [coinflip_losses] to [coinflip_wins], naturally!"
+        g "Who knows!"
     jump game_coinflip
+
 
 label game_coinflip_play_start:
     jump game_coinflip_play
@@ -64,11 +62,11 @@ label game_coinflip_play:
 label game_coinflip_loss:
     show gameria smug at left
     g "Skill issue."
-    $coinflip_losses += 1
+    $winning_streak = 0
     jump game_coinflip
 
 label game_coinflip_win:
     show gameria annoyed at left
     g "Pure luck."
-    $coinflip_wins += 1
+    $winning_streak += 1
     jump game_coinflip

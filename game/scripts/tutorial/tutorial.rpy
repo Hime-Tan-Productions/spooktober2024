@@ -2,15 +2,15 @@ label tutorial:
     show tutoriella  smile_2 at left
 
     menu:
-        t "Hello! What would you like to do?"
-        "Talk with someone.":
+        t "Find someone else to bother please."
+        "Is there anyone here to talk to?":
             show tutoriella  smile_1 at left
-            t "My good friend Connor is always looking for someone to talk with!"
+            t "Connor always has the best stories. Here, I'll call him over!"
             hide tutoriella
             jump tutorial_conversation
-        "Play some games.":
+        "I just want to play some games.":
             show tutoriella  smile_1 at left
-            t "You want to talk with Gabriella. Don't let her trash talking get to you!"
+            t "Gabriella is your girl. HEY GAMERIA!"
             hide tutoriella
             jump tutorial_games
         "Quit":
