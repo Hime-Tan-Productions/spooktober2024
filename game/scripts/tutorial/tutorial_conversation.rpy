@@ -11,7 +11,7 @@ label tutorial_conversation:
             jump conv_bus_2
         "Why somewhere far away?" if "converso far_away" in flags and "converso why" not in flags:
             jump conv_bus_3
-        "Why would Gameria want to kill you?" if "converso why" in flags and "converso tell" not in flags:
+        "Why would Gabriella want to kill you?" if "converso why" in flags and "converso tell" not in flags:
             jump conv_bus_4
         "What's her tell?" if "converso tell" in flags:
             jump conv_bus_5
@@ -33,7 +33,7 @@ label conv_bus_2:
 
 label conv_bus_3:
     show converso sad at left
-    "Gameria's gonna kill me."
+    "Gabriella's gonna kill me."
     $flags["converso why"] = 1
     jump tutorial_conversation
 
