@@ -5,15 +5,15 @@ label tutorial_conversation:
         c "Sup?"
         "Tell me a story.":
             jump conv_story
-        "What are you doing today?" if "converso bus" not in flags:
+        "What are you doing today?" if bus_story_index == 0:
             jump conv_bus_1
-        "Where are you taking the bus to?" if "converso bus" in flags and "converso far_away" not in flags:
+        "Where are you taking the bus to?" if bus_story_index == 1:
             jump conv_bus_2
-        "Why somewhere far away?" if "converso far_away" in flags and "converso why" not in flags:
+        "Why somewhere far away?" if bus_story_index == 2:
             jump conv_bus_3
-        "Why would Gameria want to kill you?" if "converso why" in flags and "converso tell" not in flags:
+        "Why would Gameria want to kill you?" if bus_story_index == 3:
             jump conv_bus_4
-        "What's her tell?" if "converso tell" in flags:
+        "What's her tell?" if bus_story_index == 4:
             jump conv_bus_5
         "Back":
             hide converso
@@ -22,25 +22,25 @@ label tutorial_conversation:
 
 label conv_bus_1:
     "I'm waiting for the bus."
-    $flags["converso bus"] = 1
+    $bus_story_index = 1
     jump tutorial_conversation
 
 label conv_bus_2:
     show converso surprised at left
     "Somewhere far away."
-    $flags["converso far_away"] = 1
+    $bus_story_index = 2
     jump tutorial_conversation
 
 label conv_bus_3:
     show converso sad at left
     "Gameria's gonna kill me."
-    $flags["converso why"] = 1
+    $bus_story_index = 3
     jump tutorial_conversation
 
 label conv_bus_4:    
     show converso angry at left
     "I figured out her tell for one of her games."
-    $flags["converso tell"] = 1
+    $bus_story_index = 4
     jump tutorial_conversation
 
 label conv_bus_5:

@@ -12,6 +12,8 @@ label start:
 
     $flags = {}
 
+    define bus_story_index = 0
+
     default beatdown = False
 
     default winning_streak = 0
