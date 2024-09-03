@@ -11,7 +11,7 @@ label conv_story:
         c "Whoa, you're really beating her! OK, here's a story..."
         jump conv_story_2
     else:
-        c "Maybe once you've beat Gameria at a 3:1 ratio in one of her games."
+        c "Maybe once you've beat Gabriella at a 3:1 ratio in one of her games."
         jump tutorial_conversation
 
 

@@ -6,9 +6,9 @@
 # The game starts here.
 
 label start:
-    define t = Character("Tutoriella")
-    define g = Character("Gameria")
-    define c = Character("Converso")
+    define t = Character("Tiffany")
+    define g = Character("Gabriella")
+    define c = Character("Connor")
 
     $flags = {}
 
