@@ -7,8 +7,22 @@ label game_numberguess:
             jump game_numberguess_play_start
         "How to play":
             jump game_numberguess_rules
+        "What's my winning streak?":
+            jump game_numberguess_record
         "Other games":
             jump tutorial_games
+            
+label game_numberguess_record:
+    if winning_streak == 0 and winning_streak == 0:
+        show gameria smile at left
+        g "Currently... 0"
+    elif winning_streak > 0:
+        show gameria annoyed at left
+        g "Ugh. Your winning streak is [winning_streak]."
+    else:
+        show gameria smug
+        g "Who knows!"
+    jump game_numberguess
 
 label game_numberguess_rules:
     g "Guess how many fingers I'm holding behind my back, 1 to 5. I won't cheat, I like super promise!"

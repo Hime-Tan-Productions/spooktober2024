@@ -7,12 +7,27 @@ label game_coinflip:
             jump game_coinflip_play_start
         "How to play":
             jump game_coinflip_rules
+        "What's my winning streak?":
+            jump game_coinflip_record
         "Other games":
             jump tutorial_games
 
 label game_coinflip_rules:
     g "Call heads or tails while the coin is in the air!"
     jump game_coinflip
+
+label game_coinflip_record:
+    if winning_streak == 0 and winning_streak == 0:
+        show gameria smile at left
+        g "Currently... 0"
+    elif winning_streak > 0:
+        show gameria annoyed at left
+        g "Ugh. Your winning streak is [winning_streak]."
+    else:
+        show gameria smug
+        g "Who knows!"
+    jump game_coinflip
+
 
 label game_coinflip_play_start:
     jump game_coinflip_play

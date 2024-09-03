@@ -7,12 +7,27 @@ label game_rps:
             jump game_rps_play_start
         "How to play":
             jump game_rps_rules
+        "What's my winning streak?":
+            jump game_rps_record
         "Other games":
             jump tutorial_games
 
 label game_rps_rules:
     g "It's simple. Choose rock, paper, or scissors, and try to beat me!"
     jump game_rps
+
+label game_rps_record:
+    if winning_streak == 0 and winning_streak == 0:
+        show gameria smile at left
+        g "Currently... 0"
+    elif winning_streak > 0:
+        show gameria annoyed at left
+        g "Ugh. Your winning streak is [winning_streak]."
+    else:
+        show gameria smug
+        g "Who knows!"
+    jump game_rps
+
 
 label game_rps_play_start:
     jump game_rps_play
