@@ -42,11 +42,12 @@ jobs:
           renpy-launcher web_build . --destination web
 
       - name: Deploy
+
         if: github.ref_name == 'main'
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: actions/configure-pages@v5
         with:
-          branch: gh-pages
-          folder: web
+          path: web
+          
 
       - name: Upload artifacts
         if: github.ref_name == 'main'
