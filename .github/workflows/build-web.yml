@@ -37,7 +37,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "Build failed. Please investigate: https://github.com/Hime-Tan-Productions/spooktober2024/actions/runs/${{github.run_id}}\nLast commit:\n${{ github.event.head_commit.message }}\n"
+          args: "❌ Build failed. Please investigate: https://github.com/Hime-Tan-Productions/spooktober2024/actions/runs/${{github.run_id}}\nLast commit:\n${{ github.event.head_commit.message }}\n"
 
   deploy:
     needs: build
@@ -59,4 +59,4 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "https://hime-tan-productions.github.io/spooktober2024 has been updated!\nWhat's new: \n${{ github.event.head_commit.message }}\n"
+          args: "✅ https://hime-tan-productions.github.io/spooktober2024 has been updated!\nWhat's new: \n${{ github.event.head_commit.message }}\n"
