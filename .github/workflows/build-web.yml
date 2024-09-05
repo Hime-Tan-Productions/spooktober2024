@@ -41,6 +41,14 @@ jobs:
         with:
           path: web
 
+      - name: Discord notification
+        if: failure()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'Build failed.'
+
   deploy:
     needs: build
     environment:
@@ -54,5 +62,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-      
+        uses: actions/deploy-pages@v4   
+      - name: Discord notification
+        if: success()
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        uses: Ilshidur/action-discord@master
+        with:
+          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been updated. Play it at https://hime-tan-productions.github.io/spooktober2024/'
