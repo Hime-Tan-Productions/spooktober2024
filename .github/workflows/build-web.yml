@@ -69,4 +69,4 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been updated. Play it at https://hime-tan-productions.github.io/spooktober2024/'
+          args: "A new build has been deployed to https://hime-tan-productions.github.io/spooktober2024/!\nWhat's new: \n${{ github.event.head_commit.message }}"
