@@ -37,7 +37,7 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: "Build failed. Please investigate: https://github.com/Hime-Tan-Productions/spooktober2024/actions/runs/${{GITHUB_RUN_ID}}\nLast commit:\n${{ github.event.head_commit.message }}\n"
+          args: "Build failed. Please investigate: https://github.com/Hime-Tan-Productions/spooktober2024/actions/runs/${{github.run_id}}\nLast commit:\n${{ github.event.head_commit.message }}\n"
 
   deploy:
     needs: build
