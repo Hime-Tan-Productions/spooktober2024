@@ -20,7 +20,7 @@ jobs:
         uses: remarkablegames/setup-renpy@v1
         with:
           web: true
-          cli-version: 9
+          cli-version: 8.3.1
 
       - name: Build web
         run: |
