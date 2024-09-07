@@ -8,6 +8,9 @@ This game is a submission to the [Spooktober 6th Annual Visual Novel Jam](https:
 # Contributing
 Contributions should be limited to game jam members. If you're interested in contributing, contact the repository owner.
 
+## Developer setup
+See [documentation here.](DEV_SETUP.md) Feel free to reach out to TJ if you need any help!
+
 ## Git workflow
 Directly committing to main is not allowed. Development work should be done in a branch, then a PR created to merge to main. Squashing commits and rebasing to main is optional but recommended.
 
