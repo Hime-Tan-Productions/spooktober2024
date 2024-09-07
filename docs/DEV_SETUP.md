@@ -4,15 +4,15 @@
 
 ### Download the Project from GitHub
 
-#### Install a Git Glient
+### Install a Git Glient
 There are many options! Mac comes with `git` installed and usable in terminal, but you probably want a GUI like [GitHub Desktop](https://desktop.github.com/download/), [Fork](https://git-fork.com/), or whatever else you prefer!
 
 The following instructions refer to various git commands like `fetch`, `pull`, `commit`, etc. Refer to your client's documentation for how to do each of those things in your client.
 
-#### Set Up Authentication
+### Set Up Authentication
 Your git client will have documentation on how to set up authentication. Some will allow you to authenticate with github.com through the click of the button, while others will make you set up an SSH key. Reach out to TJ if you need help!
 
-#### Clone the Repo
+### Clone the Repo
 Your git client will have documentation on how to clone a repository. The repo URL is https://github.com/Hime-Tan-Productions/spooktober2024 . Clone it wherever you want, but preferably to a folder like `C:/git/` or `~/git/`.
 
 ### Download Ren'Py
@@ -35,3 +35,6 @@ After you're happy with your changes, commit your changes to your bugfix branch,
 ## Fixing a Bug
 Follow the instructions under Feature Development, but name your branch `bugfix/<issue-number>-<description>`, like `bugfix/issue-5-crash-on-launch`.
 Make sure you can reproduce the issue locally before you make any changes!
+
+# Tips and tricks
+If you download the latest build from `main` and you get an error upon launch, it's likely due to the way Ren'Py doesn't adequately clean up .rpyc files. Delete all .rpyc files in your workspace. If this becomes a recurring problem, ask TJ to make a script to automate this.
