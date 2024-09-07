@@ -35,31 +35,25 @@ label start:
     play music playlist
 
     #scene bg room
-    jump repeat_menu
+    jump look_around
 
 
-label repeat_menu:
-    menu:
-        "Who should I approach?"
-    
-        "Stephanie":
-            jump conv_stephanie
-    
-        "Vivienne":    
-            jump conv_vivienne
+label look_around:
+    call screen hidden_objects
 
 
 label conv_vivienne:
-    show vivienne_conversation
+    show vivienne conversation1
     v "I am Vivienne. Welcome to my greenhouse."
+    show vivienne conversation2
     v "I'm a bad person."
-    hide vivienne_conversation
-    jump repeat_menu
+    hide vivienne
+    jump look_around
 
 
 label conv_stephanie:
-    show stephanie_conversation
+    show stephanie conversation
     s "I am Stephanie. I'm so nice!"
     s "You know you can trust me because I'm wearing big glasses."
-    hide stephanie_conversation
-    jump repeat_menu
+    hide stephanie conversation
+    jump look_around
