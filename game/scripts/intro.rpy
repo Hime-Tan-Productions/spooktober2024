@@ -1,6 +1,6 @@
 label intro:
     scene bg greenhouse_exterior with fade
-    #play music "ethereal watery ambient atmosphere.mp3"
+    play music "ethereal watery ambient atmosphere.mp3" loop
     p "I've arrived at the greenhouse."
     p "I should take a moment to steady myself before entering."
     p "It must be a tough assignment if it made Moreno quit in the middle of it!"
@@ -13,3 +13,5 @@ label intro:
     p "It's drawing hundreds of visitors from across the region."
     p "I need to interview Vivienne, the widow of the conservatory's previous owner."
     p "She's been running the place since he died a few months ago."
+    # show navigation button to enter
+    call screen mansion_exterior
