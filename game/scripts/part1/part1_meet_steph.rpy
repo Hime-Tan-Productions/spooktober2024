@@ -1,5 +1,5 @@
 label part1_meet_steph:
-    show stephanie conversation1
+    show stephanie conversation
     p "Someone is working in the greenhouse. Maybe she can answer some of my questions!"
     p "Excuse me!"
     u "Oh hello there! My name is Stephanie."
@@ -28,7 +28,7 @@ label steph_ask_vivienne:
     show stephanie scared
     s "..."
     p "Stephanie shifts her eyes left and right..."
-    show stephanie conversation1
+    show stephanie conversation
     s "She's wonderful. Couldn't be better. Can we talk about something else?"
     jump part1_steph_qs
 
@@ -40,5 +40,5 @@ label steph_ask_herself:
     p "Stephanie shudders."
     p "What happens at night?"
     s "N... nothing."
-    show stephanie conversation1
+    show stephanie conversation
     jump part1_steph_qs
