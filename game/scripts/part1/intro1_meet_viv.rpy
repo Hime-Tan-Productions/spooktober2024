@@ -18,8 +18,6 @@ label part1_viv_qs:
             jump part1_main
 
 label viv_ask_softball:
-    call suspicion(1)
-
     p "How many plants does the greenhouse have?"
     v "Far too many to count. But then, it's not the quantity we are known for. It's the quality. Like our renowned Corpse Plant."
     jump part1_viv_qs
