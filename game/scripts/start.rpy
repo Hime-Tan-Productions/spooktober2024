@@ -12,5 +12,7 @@ define s = Character("Stephanie")
 define flags = {}
 
 label start:
+    $suspicion = 0
+    $max_suspicion = 100
     jump intro
     # init bgm
