@@ -15,3 +15,4 @@ label intro:
     p "She's been running the place since he died a few months ago."
     # show navigation button to enter
     call screen mansion_exterior
+
