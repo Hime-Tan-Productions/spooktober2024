@@ -9,11 +9,9 @@ define u = Character("???", color="#ffd73a")
 define v = Character("Vivienne", color="#ffd73a")
 define s = Character("Stephanie", color="#ffd73a")
 
-# The game starts here.
-define flags = {}
-
 label start:
+    $ flags = {}
     $suspicion = 0
     $max_suspicion = 100
+    show screen suspicion_bar
     jump intro
-    # init bgm

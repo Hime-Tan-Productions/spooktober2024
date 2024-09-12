@@ -1,37 +1,56 @@
 label part1_meet_viv:
     show screen suspicion_bar
     show vivienne conversation
-    v "Who are you? Oh, that reporter? Fine, I guess I have a few minutes. What do you want to know?"
+    if "met_vivienne" not in flags:
+        $flags["met_vivienne"] = 1
+    else:
+        jump part1_viv_see_flower    
+    p "Hi! I’m here with The Eyewitness to cover your corpse flower bloom. It’s nice to meet you!"
+    n "You hold out your hand to shake Vivienne’s but she does not return the gesture."
     jump part1_viv_qs
 
 label part1_viv_qs:
-    menu: 
-        "Make it quick."
-        "Ask a softball question.":
-            jump viv_ask_softball
-        "Ask about her husband.":
-            jump viv_ask_husband
-        "Ask about her.":
-            jump viv_ask_herself
-        "That's all.":
-            hide vivienne
-            jump part1_main
+    menu:
+        v "You’re here too early for the bloom. Doors open to the public at 6 p.m."
+        "Right. I thought I could ask you some questions about the flower beforehand!":
+            jump part1_viv_flower_questions
+        "I know, but I just couldn’t wait to see the flower!":
+            jump part1_viv_couldnt_wait
 
-label viv_ask_softball:
-    p "How many plants does the greenhouse have?"
-    v "Far too many to count. But then, it's not the quantity we are known for. It's the quality. Like our renowned Corpse Plant."
-    jump part1_viv_qs
+label part1_viv_flower_questions:
+    call suspicion(20)
+    menu:
+        v "Why would you do such a thing! Don’t you know it’s rude to show up unannounced?"
+        "I’m sorry. I know this time is difficult for you. I’m sorry to hear about your husband.":
+            call suspicion(25)
+            v "What about my husband? Would you be asking me these questions if I were a man? My plants bloom better than ever with him gone!"
+            jump part1_viv_see_flower
+        "I would have called earlier, but my boss cut the phone cord when he was angry":
+            jump part1_viv_laugh
 
-label viv_ask_husband:
-    p "It must have been terrible, losing your husband."
-    show vivienne angry
-    call suspicion(50, "death_banana")
-    v "I can't stand these types of questions. I've answered them again and again. I had hoped that you were here for more relevant information."
-    jump part1_viv_qs
+label part1_viv_laugh:
+    menu:
+        v "Hahaha! What a fabulous idea!"
+        "Laugh with her":
+            call suspicion(-10)
+            jump part1_viv_see_flower
+        "Don't laugh":
+            call suspicion(10)
+            jump part1_viv_see_flower
 
-label viv_ask_herself:
-    call suspicion(-20)
-    p "What is your daily routine like?"
-    show vivienne conversation
-    v "I spend most of my time caring for my plants. From dawn till dusk, that's all that's on my mind."
-    jump part1_viv_qs
+label part1_viv_couldnt_wait:
+    v "I suppose a sneak peek for the press is good for business."
+
+label part1_viv_see_flower:
+    menu:
+        v "Very well. I suppose you'd like to see my legendary corpse flower."
+        "Yes":
+            v "She's right this way."
+            jump part1_corpse_flower
+        "Maybe later":
+            v "Tell me when you're ready."
+
+label part1_viv_end:
+    hide vivienne
+    hide suspicion_bar
+    jump part1_main

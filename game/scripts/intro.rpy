@@ -4,7 +4,6 @@ label intro:
     p "Nice to have a break from the newsroom for now….and the boss yelling at everyone."
     p "I’m upset that Moreno quit without notice too. But I’m not throwing coffee mugs at the secretary!"    
     p "Guess I’ll have to write my notes down for now."
-    n "test"
     n "<Writing in notebook, said as inner thoughts if we don’t have this mechanic>"
 
     n "Corpse Flower\nBy <PC name>, Associate Managing Editor"
