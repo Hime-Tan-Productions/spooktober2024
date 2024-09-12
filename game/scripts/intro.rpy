@@ -1,18 +1,18 @@
 label intro:
     scene bg greenhouse_exterior with fade
     play music "ethereal watery ambient atmosphere.mp3" loop
-    p "I've arrived at the greenhouse."
-    p "I should take a moment to steady myself before entering."
-    p "It must be a tough assignment if it made Moreno quit in the middle of it!"
-    p "Then again, he'd been feuding with the editor-in-chief"
-    p "... must've been bad since he skipped town without a word to anyone!"
-    scene bg greenhouse_exterior zoom with fade
-    p "Ugh, I'm nervous, as always. OK, let's go over the assignment again."
-    p "<show journal to catalogue the facts as we list them.>"
-    p "This conservatory's corpse plant is about to bloom."
-    p "It's drawing hundreds of visitors from across the region."
-    p "I need to interview Vivienne, the widow of the conservatory's previous owner."
-    p "She's been running the place since he died a few months ago."
-    # show navigation button to enter
-    call screen mansion_exterior
+    p "Nice to have a break from the newsroom for now….and the boss yelling at everyone."
+    p "I’m upset that Moreno quit without notice too. But I’m not throwing coffee mugs at the secretary!"    
+    p "Guess I’ll have to write my notes down for now."
+    n "[Writing in notebook, said as inner thoughts if we don’t have this mechanic]"
 
+    n "n Corpse Flower
+By [PC name], Associate Managing Editor"
+
+    p "At least with Moreno gone, I got a promotion! Now if only I’d get a raise too…"
+    n "June 21, 1936: corpse flower should bloom tonight. Hundreds of visitors coming to see it."
+    p "It’s hard to write with my palms so sweaty. Why do I always get so nervous before interviews? I’ve done hundreds of them."
+    p "I just have to talk to the greenhouse owner. This should be a simple story."
+    n "[in notebook] Vivienne
+        Running greenhouse since husband died earlier this year"
+    call screen mansion_exterior
