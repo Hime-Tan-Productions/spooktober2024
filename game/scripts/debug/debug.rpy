@@ -1,3 +1,3 @@
 label debug(error):
-    $a = 0
-    $a = 1 / a
+    n "Encountered an error: %(error)s"
+    pause

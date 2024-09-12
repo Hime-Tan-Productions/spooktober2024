@@ -1,8 +1,8 @@
 label part1_start:
     scene bg greenhouse_main
     call screen mansion_interior_main
-    p "I've entered the greenhouse. I need to find Vivienne. I should also see if I can talk with one of the workers."
-    p "Journalists should always seek a second source!"
+    p "This place is super foggy. Seems…mysterious."
+    n "The greenhouse welcomes you with a strong scent of vanilla, with a hint of death. Must be the corpse flower…"
 
 label part1_main:
     scene bg greenhouse_main
