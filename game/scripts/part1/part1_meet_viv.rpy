@@ -1,5 +1,4 @@
 label part1_meet_viv:
-    show screen suspicion_bar
     show vivienne conversation
     if "met_vivienne" not in flags:
         $flags["met_vivienne"] = 1
@@ -39,18 +38,17 @@ label part1_viv_laugh:
             jump part1_viv_see_flower
 
 label part1_viv_couldnt_wait:
-    v "I suppose a sneak peek for the press is good for business."
+    jump part1_viv_see_flower
 
 label part1_viv_see_flower:
     menu:
-        v "Very well. I suppose you'd like to see my legendary corpse flower."
+        v "I suppose a sneak peek for the press is good for business."
         "Yes":
             v "She's right this way."
             jump part1_corpse_flower
         "Maybe later":
             v "Tell me when you're ready."
+            jump part1_viv_end
 
 label part1_viv_end:
     hide vivienne
-    hide suspicion_bar
-    jump part1_main
