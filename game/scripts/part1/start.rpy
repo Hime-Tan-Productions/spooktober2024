@@ -5,4 +5,5 @@ label part1_start:
     p "Journalists should always seek a second source!"
 
 label part1_main:
+    scene bg greenhouse_main
     call screen mansion_interior_main

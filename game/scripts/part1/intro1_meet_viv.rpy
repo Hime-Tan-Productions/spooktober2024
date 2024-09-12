@@ -1,6 +1,6 @@
 label part1_meet_viv:
     show screen suspicion_bar
-    show vivienne conversation1
+    show vivienne conversation
     v "Who are you? Oh, that reporter? Fine, I guess I have a few minutes. What do you want to know?"
     jump part1_viv_qs
 
@@ -32,6 +32,6 @@ label viv_ask_husband:
 label viv_ask_herself:
     call suspicion(-20)
     p "What is your daily routine like?"
-    show vivienne conversation1
+    show vivienne conversation
     v "I spend most of my time caring for my plants. From dawn till dusk, that's all that's on my mind."
     jump part1_viv_qs

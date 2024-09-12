@@ -1,11 +1,13 @@
 screen mansion_interior_main():
-    textbutton "Left":
-        xalign 0.25
+    imagebutton:
+        xalign 0.1
         yalign 0.5
+        idle "left"
         action Jump("part1_left")
-    textbutton "Right":
-        xalign 0.75
+    imagebutton:
+        xalign 0.9
         yalign 0.5
+        idle "right"
         action Jump("part1_right")
     if "explored_left" in flags.keys() and "explored_right" in flags.keys():
         imagebutton:

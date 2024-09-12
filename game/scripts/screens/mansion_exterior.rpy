@@ -1,5 +1,6 @@
 screen mansion_exterior():
-    textbutton "Enter":
-        xalign 0.5
-        yalign 0.5
-        action Jump("part1_start")
+        imagebutton:
+            xalign 0.5
+            yalign 0.75
+            idle "up"
+            action Jump("part1_start")
