@@ -3,10 +3,10 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define p = Character("")
-define u = Character("???")
-define v = Character("Vivienne")
-define s = Character("Stephanie")
+define p = Character("", color="#ffd73a")
+define u = Character("???", color="#ffd73a")
+define v = Character("Vivienne", color="#ffd73a")
+define s = Character("Stephanie", color="#ffd73a")
 
 # The game starts here.
 define flags = {}
