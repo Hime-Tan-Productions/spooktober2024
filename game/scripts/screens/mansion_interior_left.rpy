@@ -1,7 +1,8 @@
 screen mansion_interior_left():
-    textbutton "Right":
-        xalign 0.75
+    imagebutton:
+        xalign 0.9
         yalign 0.5
+        idle "right"
         action Jump("part1_main")
     imagebutton:
         xalign 0.5
