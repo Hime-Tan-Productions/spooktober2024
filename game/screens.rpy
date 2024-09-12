@@ -563,7 +563,7 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].[renpy.license!t]\n\nLUCKY TYPEWRITER font has been created by Lukas Krakora and is free for non-commercial use only. To use the font commercially, please contact them at krraaa@yahoo.com for information about pricing.\n")
 
 
 style about_label is gui_label
