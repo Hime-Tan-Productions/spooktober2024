@@ -24,7 +24,7 @@ label viv_ask_softball:
 
 label viv_ask_husband:
     p "It must have been terrible, losing your husband."
-    show vivienne conversation_angry
+    show vivienne angry
     call suspicion(50, "death_banana")
     v "I can't stand these types of questions. I've answered them again and again. I had hoped that you were here for more relevant information."
     jump part1_viv_qs
