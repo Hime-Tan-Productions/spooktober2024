@@ -52,3 +52,4 @@ label part1_viv_see_flower:
 
 label part1_viv_end:
     hide vivienne
+    jump part1_main
