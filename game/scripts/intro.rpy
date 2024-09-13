@@ -15,4 +15,4 @@ label intro:
     n "<in notebook> Vivienne\nRunning greenhouse since husband died earlier this year"
     call screen mansion_exterior
 
-    "Guess I’ll have to write my notes down for now."
+    p "Guess I’ll have to write my notes down for now."
