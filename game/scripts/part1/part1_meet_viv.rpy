@@ -1,5 +1,6 @@
 label part1_meet_viv:
     show vivienne conversation
+    pause
     if "met_vivienne" not in flags:
         $flags["met_vivienne"] = 1
     else:
