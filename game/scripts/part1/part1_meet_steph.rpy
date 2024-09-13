@@ -1,5 +1,6 @@
 label part1_meet_steph:
     show stephanie conversation
+    pause
     p "Someone is working in the greenhouse. Maybe she can answer some of my questions!"
     p "Excuse me!"
     u "Oh hello there! My name is Stephanie."
