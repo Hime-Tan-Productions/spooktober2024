@@ -13,5 +13,7 @@ label start:
     $ flags = {}
     $suspicion = 0
     $max_suspicion = 100
-    show screen suspicion_bar
+    show screen journal_tabs with moveinleft
+    show screen suspicion_bar with moveintop
+    pause
     jump intro
