@@ -10,10 +10,12 @@ define v = Character("Vivienne", color="#ffd73a")
 define s = Character("Stephanie", color="#ffd73a")
 
 label start:
-    $ flags = {}
+    $flags = {}
+    $journal_people = []
+    $journal_story = []
+    $journal_todo = []
     $suspicion = 0
     $max_suspicion = 100
     show screen journal_tabs with moveinleft
     show screen suspicion_bar with moveintop
-    pause
     jump intro
