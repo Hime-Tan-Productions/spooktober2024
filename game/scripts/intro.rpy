@@ -14,3 +14,5 @@ label intro:
     p "I just have to talk to the greenhouse owner. This should be a simple story."
     n "<in notebook> Vivienne\nRunning greenhouse since husband died earlier this year"
     call screen mansion_exterior
+
+    p "Guess I’ll have to write my notes down for now."
