@@ -19,7 +19,7 @@ label part2_banana_tree:
                     call suspicion(-5)
                     v "Seeds are for the weak. I’m willing to go the extra mile for my plants."
                     v "Howard never had the guts like me!"
-                "I'm sure you're still a better botanist."
+                "I'm sure you're still a better botanist.":
                     call suspicion(-5)
                     menu:
                         v "I am! Howard never agreed with me on the best gardening methods."

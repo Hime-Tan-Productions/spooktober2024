@@ -1,4 +1,4 @@
-label part2_corpse_plant
+label part2_corpse_plant:
     scene bg corpse_plant_room with fade
     menu:
         v "Here she is! Isn't she a beauty?"
