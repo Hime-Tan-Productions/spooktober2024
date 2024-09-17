@@ -46,7 +46,7 @@ label part1_viv_see_flower:
         v "I suppose a sneak peek for the press is good for business."
         "Yes":
             v "She's right this way."
-            jump part1_corpse_flower
+            jump part2_start
         "Maybe later":
             v "Tell me when you're ready."
             jump part1_viv_end
