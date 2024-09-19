@@ -1,5 +1,8 @@
 label part2_banana_tree:
     scene bg banana_tree with fade
+    call screen mansion_interior_banana
+
+label part2_banana_tree_interview:
     show vivienne conversation
     v "This here is my banana tree!"
     menu:
