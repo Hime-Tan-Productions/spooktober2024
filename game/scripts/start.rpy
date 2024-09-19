@@ -14,6 +14,7 @@ label start:
     $journal_people = []
     $journal_story = []
     $journal_todo = []
+    $part = 0
     $suspicion = 0
     $max_suspicion = 100
     show screen journal_tabs with moveinleft

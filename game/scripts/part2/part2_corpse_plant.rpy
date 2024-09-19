@@ -1,5 +1,9 @@
 label part2_corpse_plant:
-    scene bg corpse_plant_room with fade
+    scene bg corpse_plant with fade
+    call screen mansion_interior_corpse_plant
+
+label part2_viv_corpse_plant_interview:
+    $flags["p2_viv_corpse_int"] = True
     menu:
         v "Here she is! Isn't she a beauty?"
         "Yes":

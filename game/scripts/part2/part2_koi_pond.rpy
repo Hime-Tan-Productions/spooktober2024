@@ -1,5 +1,8 @@
+label part2_koi_thorns:
+    scene bg koi_thorns with fade
+    call screen mansion_interior_koi_thorn
+
 label part2_koi_pond:
-    scene bg koi_pond with fade
     show vivienne conversation
     v "This here is the most tranquil part of my greenhouse!"
     v "I have some of the rarest koi species in my pond."
