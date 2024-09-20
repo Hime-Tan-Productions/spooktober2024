@@ -3,7 +3,7 @@ label part2_corpse_plant:
     call screen mansion_interior_corpse_plant
 
 label part2_viv_corpse_plant_interview:
-    $flags["p2_viv_corpse_int"] = True
+    $flags["p2_viv_corpse_plant_int"] = True
     menu:
         v "Here she is! Isn't she a beauty?"
         "Yes":
@@ -25,7 +25,7 @@ label part2_viv_odd:
                 v "Do you doubt my abilities as a botanist?"
                 "Yes":
                     v "Well, I doubt your abilities as a journalist!"
-                    call suspicion(20, death_corpse_flower)
+                    call suspicion(20, "death_corpse_plant")
                     jump part2_viv_aroma
                 "No":
                     call suspicion(-5)
@@ -33,7 +33,7 @@ label part2_viv_odd:
 
         "The smell is very overpowering. in my life.":
             v "I'll show you something powerful!"
-            call suspicion(100, death_corpse_flower)
+            call suspicion(100, "death_corpse_plant")
 
 
 label part2_viv_scent:
@@ -44,7 +44,7 @@ label part2_viv_scent:
         "I've never smelled anything so foul in my life.":
 
             v "I'll show you something foul!"
-            call suspicion(10, death_corpse_flower)
+            call suspicion(100, "death_corpse_plant")
     jump part2_viv_aroma
 
 
@@ -77,7 +77,6 @@ label part2_viv_infrequent_blooms:
             call suspicion(-10)            
             v "It's certainly something not to miss!"
             p "I can't wait to see it when it's fully bloomed tonight."
-            v "Why don't you view the rest of my greenhouse while we wait?"
             jump part2_corpse_plant_end
         "Is this your first bloom?":
             menu:
@@ -105,11 +104,4 @@ label part2_viv_infrequent_blooms:
     jump part2_corpse_plant_end
 
 label part2_corpse_plant_end:
-    menu:
-        v "Would you like to see the rest of my greenhouse?"
-        "Yes":
-            jump part2_banana_tree
-        "Maybe later":
-            call under_construction
-        "No":
-            n "Game over"
+    jump corpse_plant_room

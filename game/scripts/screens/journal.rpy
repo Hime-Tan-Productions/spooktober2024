@@ -7,11 +7,11 @@ screen journal_tabs:
         imagebutton:
             idle "journal_tab"
             foreground Text("TODO", style="journal_tab")
-            action ShowMenu("journal", _transition=moveinleft, tab="Todo")
+            action ShowMenu("journal", _transition=moveinleft, tab="People")
         imagebutton:
             idle "journal_tab"
             foreground Text("People", style="journal_tab")
-            action ShowMenu("journal", _transition=moveinleft, tab="People")
+            action ShowMenu("journal", _transition=moveinleft, tab="Plants")
         imagebutton:
             idle "journal_tab"
             foreground Text("Prefs", style="journal_tab")
@@ -37,11 +37,13 @@ screen journal:
                 for item in journal_story:
                     text item
                 pass
-            if tab == "TODO":
-                for item in journal_todo:
-                    text item
-                pass
             if tab == "People":
+                if "met_vivienne" in flags.keys():
+                    text "Vivienne: The proprietress of the conservatory."
+                if "met_stephanie" in flags.keys():
+                    text "Stephanie: A worker who seems very nice."
+                pass
+            if tab == "Plants":
                 for item in journal_people:
                     text item
 

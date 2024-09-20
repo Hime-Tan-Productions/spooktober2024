@@ -1,7 +1,8 @@
 label part1_meet_steph:
+    $flags["met_stephanie"] = True
     show stephanie conversation
     pause
-    p "Someone is working in the greenhouse. Maybe she can answer some of my questions!"
+    p "I didn’t mean to frighten you, miss. I’m just here to ask some questions about the greenhouse."
     p "Excuse me!"
     u "Oh hello there! My name is Stephanie."
     p "I didn’t mean to frighten you, miss. I’m just here to ask some questions about the greenhouse."
@@ -16,7 +17,7 @@ label part1_steph_qs:
             jump steph_ask_vivienne
         "That's all.":
             hide stephanie
-            jump part1_left
+            jump banana_room
 
 label steph_ask_greenhouse:
     p "The corpse flower is blooming."
@@ -109,7 +110,4 @@ label part1_steph_viv:
 
 label part1_steph_end:
     hide stephanie
-    jump part1_main
-
-
-
+    jump banana_room

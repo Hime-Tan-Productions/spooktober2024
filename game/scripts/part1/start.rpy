@@ -6,5 +6,4 @@ label part1_start:
     n "The greenhouse welcomes you with a strong scent of vanilla, with a hint of death. Must be the corpse flower…"
 
 label part1_main:
-    scene bg koi_thorns
-    call screen mansion_interior_koi_thorn
+    jump koi_thorns_room
