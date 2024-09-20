@@ -40,7 +40,7 @@ label part2_bt_howard:
         v "What else would you like to know about my Howard’s banana tree?"
         "What happened to Howard?":
             v "Perhaps you’d like to see it as Howard saw it…"
-            call suspicion(100, "death_banana_tree")
+            call suspicion(100, "death_banana")
         "What is your favorite thing about Howard's banana tree?":
             v "I’ve added my own special touch to the tree… it gives the bananas a little extra flavor."
     jump banana_room

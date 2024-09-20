@@ -25,7 +25,7 @@ label part2_viv_odd:
                 v "Do you doubt my abilities as a botanist?"
                 "Yes":
                     v "Well, I doubt your abilities as a journalist!"
-                    call suspicion(20, death_corpse_flower)
+                    call suspicion(20, death_corpse_plant)
                     jump part2_viv_aroma
                 "No":
                     call suspicion(-5)
@@ -33,7 +33,7 @@ label part2_viv_odd:
 
         "The smell is very overpowering. in my life.":
             v "I'll show you something powerful!"
-            call suspicion(100, death_corpse_flower)
+            call suspicion(100, death_corpse_plant)
 
 
 label part2_viv_scent:
@@ -44,7 +44,7 @@ label part2_viv_scent:
         "I've never smelled anything so foul in my life.":
 
             v "I'll show you something foul!"
-            call suspicion(100, death_corpse_flower)
+            call suspicion(100, death_corpse_plant)
     jump part2_viv_aroma
 
 
