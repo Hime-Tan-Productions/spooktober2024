@@ -105,10 +105,4 @@ label part2_viv_infrequent_blooms:
 
 label part2_corpse_plant_end:
     menu:
-        v "Would you like to see the rest of my greenhouse?"
-        "Yes":
-            v "Very well. I suppose you'll be getting the full tour. What do you want to know about next?"
-            jump corpse_plant_room
-        "No, the corpse plant is all I'm here for.":
-            v "Very well. The show will start soon..."
-            jump part3_start
+        jump corpse_plant_room
