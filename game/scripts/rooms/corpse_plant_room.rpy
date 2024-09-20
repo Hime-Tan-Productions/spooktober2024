@@ -1,7 +1,7 @@
 label corpse_plant_room:
     scene bg corpse_plant
 
-    if "p2_corpse_plant_int" in flags.keys():
+    if "p2_viv_corpse_plant_int" in flags.keys():
         menu:
             n "The viewing will begin soon. Are you ready?"
             "Yes":

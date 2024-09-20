@@ -40,5 +40,9 @@ screen mansion_interior_koi_thorn():
                 yalign 0
                 idle "vivienne full"
                 action Jump("part2_viv_crown_of_thorns_interview")
-        else:
-            pass
+        elif "p2_viv_corpse_plant_int" in flags.keys() and "p2_viv_banana_tree_int" in flags.keys():
+            imagebutton:
+                xalign 0.5
+                yalign 0
+                idle "stephanie full"
+                action Jump("part2_stephanie_conv")

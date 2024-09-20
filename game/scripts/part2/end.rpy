@@ -1,5 +1,5 @@
 label part2_end_ask:
-        if "p2_corpse_plant_int" in flags.keys():
+        if "p2_viv_corpse_plant_int" in flags.keys():
             menu:
                 n "The viewing will begin soon. Are you ready?"
                 "Yes":
