@@ -44,7 +44,7 @@ label part2_viv_scent:
         "I've never smelled anything so foul in my life.":
 
             v "I'll show you something foul!"
-            call suspicion(10, death_corpse_flower)
+            call suspicion(100, death_corpse_flower)
     jump part2_viv_aroma
 
 
@@ -77,7 +77,6 @@ label part2_viv_infrequent_blooms:
             call suspicion(-10)            
             v "It's certainly something not to miss!"
             p "I can't wait to see it when it's fully bloomed tonight."
-            v "Why don't you view the rest of my greenhouse while we wait?"
             jump part2_corpse_plant_end
         "Is this your first bloom?":
             menu:

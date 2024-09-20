@@ -10,7 +10,6 @@ label part2_banana_tree_interview:
         "That's impressive!":
             call suspicion(5)
             v "Not at all! It's a cowardly way to get a new plant."
-            n "Doesn't she mean grow a new plant? Oh well. I shouldn't question her further."
             menu:
                 n "Doesn't she mean grow a new plant? Oh well I shouldn't question her further."
                 "What is the best way to get a new plant?":
