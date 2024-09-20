@@ -14,16 +14,31 @@ screen mansion_interior_koi_thorn():
                 xalign 0.1
                 yalign 0.5
                 idle "left"
-                action Jump("part1_left")
+                action Jump("banana_room")
     if right:
             imagebutton:
                 xalign 0.9
                 yalign 0.5
                 idle "right"
-                action Jump("part1_right")
+                action Jump("corpse_plant_room")
     if part == 1:
         imagebutton:
             xalign 0.5
             yalign 0
             idle "vivienne full"
             action Jump("part1_meet_viv")
+    if part == 2:
+        if "p2_viv_koi_pond_int" not in flags.keys():
+            imagebutton:
+                xalign 0.5
+                yalign 0
+                idle "vivienne full"
+                action Jump("part2_viv_koi_pond_interview")
+        elif "p2_viv_crown_of_thorns_int" not in flags.keys():
+            imagebutton:
+                xalign 0.5
+                yalign 0
+                idle "vivienne full"
+                action Jump("part2_viv_crown_of_thorns_interview")
+        else:
+            pass

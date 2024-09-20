@@ -3,7 +3,7 @@ label part2_corpse_plant:
     call screen mansion_interior_corpse_plant
 
 label part2_viv_corpse_plant_interview:
-    $flags["p2_viv_corpse_int"] = True
+    $flags["p2_corpse_plant_int"] = True
     menu:
         v "Here she is! Isn't she a beauty?"
         "Yes":
@@ -107,8 +107,8 @@ label part2_corpse_plant_end:
     menu:
         v "Would you like to see the rest of my greenhouse?"
         "Yes":
-            jump part2_banana_tree
-        "Maybe later":
-            call under_construction
-        "No":
-            n "Game over"
+            v "Very well. I suppose you'll be getting the full tour. What do you want to know about next?"
+            jump corpse_plant_room
+        "No, the corpse plant is all I'm here for.":
+            v "Very well. The show will start soon..."
+            jump part3_start

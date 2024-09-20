@@ -2,8 +2,10 @@ label part2_koi_thorns:
     scene bg koi_thorns with fade
     call screen mansion_interior_koi_thorn
 
-label part2_koi_pond:
+label part2_viv_koi_pond_interview:
     show vivienne conversation
+    $flags["p2_viv_koi_pond_int"] = True
+
     v "This here is the most tranquil part of my greenhouse!"
     v "I have some of the rarest koi species in my pond."
     n "Dew drops cover the lily pads on the water. The dew drops are perfectly round."
@@ -28,12 +30,4 @@ label part2_koi_nice:
         "It seems odd that everything in the greenhouse has something extra.":
             call suspicion(-5)
             v "Certainly! My greenhouse is the world’s best plant collection!"
-    jump part2_koi_next
-
-label part2_koi_next:
-    menu:
-        v "Would you like to see another special plant?"
-        "Yes":
-            jump part2_crown_of_thorns
-        "No":
-            pass 
+    jump koi_thorns_room

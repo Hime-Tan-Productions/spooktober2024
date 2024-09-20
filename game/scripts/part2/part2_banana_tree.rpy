@@ -2,8 +2,9 @@ label part2_banana_tree:
     scene bg banana_tree with fade
     call screen mansion_interior_banana
 
-label part2_banana_tree_interview:
+label part2_viv_banana_tree_interview:
     show vivienne conversation
+    $flags["p2_viv_banana_tree_int"] = True
     v "This here is my banana tree!"
     menu:
         v "My husband Howard grew it from a single seed."
@@ -39,7 +40,7 @@ label part2_bt_howard:
         v "What else would you like to know about my Howard’s banana tree?"
         "What happened to Howard?":
             v "Perhaps you’d like to see it as Howard saw it…"
-            call suspicion(10, "death_banana_tree")
+            call suspicion(100, "death_banana_tree")
         "What is your favorite thing about Howard's banana tree?":
             v "I’ve added my own special touch to the tree… it gives the bananas a little extra flavor."
-    jump part2_koi_pond
+    jump banana_room

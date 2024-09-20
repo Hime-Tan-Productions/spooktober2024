@@ -17,7 +17,7 @@ label part1_steph_qs:
             jump steph_ask_vivienne
         "That's all.":
             hide stephanie
-            jump part1_left
+            jump banana_room
 
 label steph_ask_greenhouse:
     p "The corpse flower is blooming."
@@ -110,7 +110,4 @@ label part1_steph_viv:
 
 label part1_steph_end:
     hide stephanie
-    jump part1_main
-
-
-
+    jump banana_room
