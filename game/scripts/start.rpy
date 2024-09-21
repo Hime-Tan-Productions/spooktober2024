@@ -3,8 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define n = Character("", color="#ffd73a")
-define p = Character("", color="#ffd73a")
+define n = Character(name=None, color="#ffd73a")
+define p = Character(name=None, color="#ffd73a")
 define u = Character("???", color="#ffd73a")
 define v = Character("Vivienne", color="#ffd73a")
 define s = Character("Stephanie", color="#ffd73a")
