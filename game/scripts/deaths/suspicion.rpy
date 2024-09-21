@@ -5,10 +5,10 @@ label suspicion(dmg, ending=None):
     if suspicion >= max_suspicion and ending != None:
         $suspicion = max_suspicion
         scene black with fade
+        hide screen suspicion with moveouttop
         $renpy.call("" + ending)
-        scene game_over with fade
-        centered "Game Over"
-        pause
+        show red_flash
+        pause 1
         call screen game_over
     return
     

@@ -1,2 +1,4 @@
 screen game_over():
-    pass
+    modal True
+    fixed:
+        text "Game Over" xalign 0.5 yalign 0.5
