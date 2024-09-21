@@ -28,15 +28,25 @@ screen mansion_interior_koi_thorn():
             idle "vivienne full"
             action Jump("part1_meet_viv")
     if part == 2:
+        imagebutton:
+            xalign 0.25
+            yalign 0.25
+            idle "watch"
+            action Jump("part2_find_watch")
+        imagebutton:
+            xalign 0.25
+            yalign 0.75
+            idle "bottle"
+            action Jump("part2_find_rosary")
         if "p2_viv_koi_pond_int" not in flags.keys():
             imagebutton:
-                xalign 0.5
+                xalign 0.75
                 yalign 0
                 idle "vivienne full"
                 action Jump("part2_viv_koi_pond_interview")
         elif "p2_viv_crown_of_thorns_int" not in flags.keys():
             imagebutton:
-                xalign 0.5
+                xalign 0.75
                 yalign 0
                 idle "vivienne full"
                 action Jump("part2_viv_crown_of_thorns_interview")
