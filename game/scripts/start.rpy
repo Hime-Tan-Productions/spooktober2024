@@ -8,6 +8,9 @@ define p = Character(name=None, color="#ffd73a")
 define u = Character("???", color="#ffd73a")
 define v = Character("Vivienne", color="#ffd73a")
 define s = Character("Stephanie", color="#ffd73a")
+define moreno = Character("Moreno", color="#ffd73a")
+define nun = Character("Sister Garcia", color="#ffd73a")
+define howard = Character("Vivienne's Husband", color="#ffd73a")
 
 label start:
     $flags = {}

@@ -36,7 +36,7 @@ screen mansion_interior_koi_thorn():
         imagebutton:
             xalign 0.25
             yalign 0.75
-            idle "bottle"
+            idle "rosary"
             action Jump("part2_find_rosary")
         if "p2_viv_koi_pond_int" not in flags.keys():
             imagebutton:
