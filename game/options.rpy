@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("Corpse Plant")
+define config.name = _("Corpse Flower")
 
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
@@ -36,7 +36,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "corpse-plant-spooktober24"
+define build.name = "corpse-flower-spooktober24"
 
 
 ## Sounds and music ############################################################

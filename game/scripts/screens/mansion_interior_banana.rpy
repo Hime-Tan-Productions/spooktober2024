@@ -11,12 +11,12 @@ screen mansion_interior_banana():
             idle "right"
             action Jump("part1_main")
     if part == 1:
-        if "met_stephanie" not in flags.keys():
-            imagebutton:
-                xalign 0.5
-                yalign 0.5
-                idle "hat"
-                action Jump("part1_meet_steph")
+        #if "met_stephanie" not in flags.keys():
+        imagebutton:
+            xalign 0.5
+            yalign 0.5
+            idle "pedestal"
+            action Jump("part1_meet_steph")
     elif part == 2:
         imagebutton:
             xalign 0.4
