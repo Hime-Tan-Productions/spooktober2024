@@ -4,11 +4,11 @@ label suspicion(dmg, ending=None):
         $suspicion = 0
     if suspicion >= max_suspicion and ending != None:
         $suspicion = max_suspicion
-        $renpy.call("" + ending)
         scene black with fade
-        p "You die."
-        while True:
-            pause
-            $MainMenu()()
+        $renpy.call("" + ending)
+        scene game_over with fade
+        centered "Game Over"
+        pause
+        call screen game_over
     return
     
