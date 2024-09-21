@@ -218,7 +218,7 @@ style choice_button is button
 style choice_button_text is button_text
 
 style choice_vbox:
-    xalign 0.5
+    xalign 0.90
     ypos 405
     yanchor 0.5
 
@@ -563,7 +563,8 @@ screen about():
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].[renpy.license!t]\n\n")
+            text _("Created by Hime-tan Productions.\n")
+            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
             text _("LUCKY TYPEWRITER font has been created by Lukas Krakora and is free for non-commercial use only. To use the font commercially, please contact them at krraaa@yahoo.com for information about pricing.")
 
 style about_label is gui_label

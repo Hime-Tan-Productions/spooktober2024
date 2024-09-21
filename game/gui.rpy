@@ -69,7 +69,7 @@ define gui.interface_text_font = "LUCKY TYPEWRITER.ttf"
 define gui.text_size = 33
 
 ## The size of character names.
-define gui.name_text_size = 45
+define gui.name_text_size = 40
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 33
@@ -204,10 +204,10 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ##
 ## Choice buttons are used in the in-game menus.
 
-define gui.choice_button_width = 1185
+define gui.choice_button_width = 500
 define gui.choice_button_height = None
 define gui.choice_button_tile = False
-define gui.choice_button_borders = Borders(150, 8, 150, 8)
+define gui.choice_button_borders = Borders(20, 15, 20, 15)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
@@ -448,8 +448,8 @@ init python:
         ## Change the size and spacing of various things.
         gui.slider_size = 54
 
-        gui.choice_button_width = 1860
-        gui.choice_button_text_size = 45
+        gui.choice_button_width = 500
+        gui.choice_button_text_size = 10
 
         gui.navigation_spacing = 30
         gui.pref_button_spacing = 15
