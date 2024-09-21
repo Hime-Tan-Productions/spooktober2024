@@ -17,6 +17,7 @@ label start:
     $part = 0
     $suspicion = 0
     $max_suspicion = 100
-    show screen journal_tabs with moveinleft
+    scene black with fade
+    #show screen journal_tabs with moveinleft
     show screen suspicion_bar with moveintop
     jump intro
