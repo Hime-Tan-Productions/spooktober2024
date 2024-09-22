@@ -1,6 +1,6 @@
 label part2_koi_thorns:
     scene bg koi_thorns with fade
-    call screen mansion_interior_koi_thorn
+
 
 label part2_viv_koi_pond_interview:
     show vivienne conversation
