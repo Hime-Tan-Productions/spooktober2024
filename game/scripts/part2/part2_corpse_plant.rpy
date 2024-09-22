@@ -3,7 +3,7 @@ label part2_corpse_plant:
     call screen mansion_interior_corpse_plant
 
 label part2_viv_corpse_plant_interview:
-    $flags["p2_viv_corpse_plant_int"] = True
+    $int_corpse_plant = True
     menu:
         v "Here she is! Isn't she a beauty?"
         "Yes":

@@ -1,5 +1,5 @@
 label part1_meet_steph:
-    $flags["met_stephanie"] = True
+    $met_stephanie = True
     show stephanie conversation
     pause
     p "I didn’t mean to frighten you, miss. I’m just here to ask some questions about the greenhouse."

@@ -4,7 +4,7 @@ label part2_koi_thorns:
 
 label part2_viv_koi_pond_interview:
     show vivienne conversation
-    $flags["p2_viv_koi_pond_int"] = True
+    $int_koi_pond = True
 
     v "This here is the most tranquil part of my greenhouse!"
     v "I have some of the rarest koi species in my pond."

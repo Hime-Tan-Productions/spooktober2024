@@ -1,5 +1,5 @@
 label part2_viv_crown_of_thorns_interview:
-    $flags["p2_viv_crown_of_thorns_int"] = True
+    $int_crown_of_thorns = True
 
     v "This here is my Crown of Thorns! I bred it to have the sharpest thorns of any plant in the world!"
     menu:

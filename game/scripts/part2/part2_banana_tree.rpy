@@ -4,7 +4,7 @@ label part2_banana_tree:
 
 label part2_viv_banana_tree_interview:
     show vivienne conversation
-    $flags["p2_viv_banana_tree_int"] = True
+    $int_banana_tree = True
     v "This here is my banana tree!"
     menu:
         v "My husband Howard grew it from a single seed."

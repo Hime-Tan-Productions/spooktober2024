@@ -2,7 +2,7 @@ screen mansion_interior_corpse_plant():
     $left = False
 
     if part == 2:
-        if "p2_viv_corpse_plant_int" in flags.keys():
+        if int_corpse_flower:
             $left = True        
         else:
             imagebutton:

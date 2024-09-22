@@ -38,9 +38,9 @@ screen journal:
                     text item
                 pass
             if tab == "People":
-                if "met_vivienne" in flags.keys():
+                if met_vivienne:
                     text "Vivienne: The proprietress of the conservatory."
-                if "met_stephanie" in flags.keys():
+                if met_stephanie:
                     text "Stephanie: A worker who seems very nice."
                 pass
             if tab == "Plants":
