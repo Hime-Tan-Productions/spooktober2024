@@ -31,12 +31,12 @@ screen mansion_interior_koi_thorn():
     if part == 2:
         imagebutton:
             xalign 0.25
-            yalign 0.25
+            yalign 0.75
             idle "watch"
             action Jump("part2_find_watch")
         imagebutton:
             xalign 0.25
-            yalign 0.75
+            yalign 0.25
             idle "rosary"
             action Jump("part2_find_rosary")
         if not int_koi_pond:
