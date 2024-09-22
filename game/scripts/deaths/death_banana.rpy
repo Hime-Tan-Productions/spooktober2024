@@ -1,9 +1,9 @@
 label death_banana:
     show vivienne angry
-    v "Why don’t you try one of the bananas? They’re wonderful!"
+    v "Why don't you try one of the bananas? They're wonderful!"
     menu:
         "I don't like bananas.":
-            v "Unfortunately, you don’t have a choice."
+            v "Unfortunately, you don't have a choice."
             call death_banana_cont
         "I'd love to!":
             v "More food for my sweet girl."

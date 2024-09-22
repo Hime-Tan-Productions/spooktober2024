@@ -5,7 +5,7 @@ label part3_start:
     scene bg corpse_plant_crowd with fade
     p "Half the county appears to have come to see the corpse plant open to its fully glory."
     p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook in the hot sun all day."
-    p "I’d be emptying my stomach in the ferns if I hadn’t already done that after my first visit to the greenhouse."
+    p "I'd be emptying my stomach in the ferns if I hadn't already done that after my first visit to the greenhouse."
 
     show vivienne
     v "Ladies and gentleman, I present to you the eighth wonder of the world! "

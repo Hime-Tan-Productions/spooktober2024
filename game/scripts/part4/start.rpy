@@ -6,30 +6,32 @@ label part4_start:
     p "Night falls. The stench of the corpse plant is unbearable."
     p "But I can't leave. Not now. I have to know."
     p "The smell is making me delirious. I stumble out from behind the plant toward the corpse plant."
+
     s "Get out! She sees everything! She knows everything!"
     p "I think I heard something strange..."
-    howard "I just don't trust you, Honey."
-    p "What was that?!"
-    nun "Hail Mary, full of grace..."
-    p "Is the stench getting to my brain? Or is this plant really talking to me?"
     s "There's no escaping her!"
-    p "Stephanie?"
-    howard "Noooooo!"
+    s "Noooooo!"
+    p "I think I just heard Stephanie. Or maybe the flower's stench is just getting to my head."
+
     moreno "Lazy writing? I've got a story that's not lazy!"
-    p "Moreno?"
+    moreno "Let's see him try to write 1,000 words in half an hour!"
+    moreno "Why can't he cover this plant story? This lady gives me the creeps!"
+    moreno "There's no escaping her!"
+    p "That sounded like Moreno! I knew he'd never quit without notice!"
+
+    howard "I just don't trust you, Honey."
     howard "I just don't know what to do about her anymore..."
+    howard "I have to sleep with one eye open or she'll get me…"
+    howard "There's no escaping her!"
+    p "The plant is talking! It sounds like Howard was onto Vivienne before she killed him!"
+
+
+    nun "Hail Mary, full of grace..."
     nun "Pray for us sinners…"
-    p "Sounds like the nun is in here too..."
-    moreno "Let’s see him try to write 1,000 words in half an hour!"
-    howard "I have to sleep with one eye open or she’ll get me…"
     nun "Now and at the hour of our death…"
-    moreno "Why can’t he cover this plant story? This lady gives me the creeps!"
-    s "There’s no escaping her!"
     nun "The Lord shall strike down upon thee!"
-    s "There's no escaping her!"
-    p "There are definitely voices coming from the plant."
-    p "They seem to be coming from the people who disappeared here…"
-    p "That Vivienne killed here..."
+    p "Of course, the nun is in here. Vivienne won't get away with this!"
+
     p "I'd better get out before I'm next!"
     p "Uh oh..."
     show vivienne
@@ -44,7 +46,7 @@ label part4_start:
                     v "How dare you! This plant speaks only to me!"
                 "Is that where Stephanie went?":
                     call suspicion(-5)
-                    v "Stephanie was a lousy botanist! Her blood will make my plants grow bigger and better than she ever could!Stephanie was a lousy botanist! Her blood will make my plants grow bigger and better than she ever could!"
+                    v "Stephanie was a lousy botanist! Her blood will make my plants grow bigger and better than she ever could!"
         "How many people have you killed here?":
             call suspicion(10)
             v "That's none of your business! I should have you arrested for trespassing!"
