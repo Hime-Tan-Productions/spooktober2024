@@ -17,7 +17,7 @@ label part3_start:
     $ renpy.sound.set_volume(0.9,1.0,"nature")
     play nature "flies 2.mp3" noloop
     p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook in the hot sun all day."
-    p "I’d be emptying my stomach in the ferns if I hadn’t already done that after my first visit to the greenhouse."
+    p "I'd be emptying my stomach in the ferns if I hadn't already done that after my first visit to the greenhouse."
 
     show vivienne
     $ renpy.sound.set_volume(0.0,2.0,"nature")

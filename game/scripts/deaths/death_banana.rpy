@@ -8,10 +8,10 @@ label death_banana:
     play death "it was you (harsh horror reveal strings).mp3" loop
     $ renpy.sound.set_volume(1.0,0.0,"death")
 
-    v "Why don’t you try one of the bananas? They’re wonderful!"
+    v "Why don't you try one of the bananas? They're wonderful!"
     menu:
         "I don't like bananas.":
-            v "Unfortunately, you don’t have a choice."
+            v "Unfortunately, you don't have a choice."
             jump death_banana_cont
         "I'd love to!":
             v "More food for my sweet girl."

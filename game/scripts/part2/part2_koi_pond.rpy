@@ -11,9 +11,9 @@ label part2_viv_koi_pond_interview:
     n "Dew drops cover the lily pads on the water. The dew drops are perfectly round."
     
     menu:
-        "Vivienne’s koi pond creeps me out more than it calms me."
+        "Vivienne's koi pond creeps me out more than it calms me."
         "Is there anything else in the koi pond?":
-            v "Why don’t you see for yourself? I’m done with stupid questions!  Stop ruining my peace."
+            v "Why don't you see for yourself? I'm done with stupid questions!  Stop ruining my peace."
             call suspicion(5, "death_koi_pond")
         "What makes your koi so special?":
             v "My koi are here to keep the peace."
@@ -21,13 +21,15 @@ label part2_viv_koi_pond_interview:
     jump part2_koi_nice
 
 label part2_koi_nice:
+    p "What is this woman on about? No wonder no one else wanted to cover this story!"
     p "You're right, your pond is very peaceful!"
+    p "Better pretend I don't notice how odd she's acting."
     menu:
         v "I know! Gives the greenhouse a little something extra."
         "I could stay here all day!":
-            v "I hope you’ll be leaving soon."
+            v "I hope you'll be leaving soon."
             call suspicion(5)
         "It seems odd that everything in the greenhouse has something extra.":
             call suspicion(-5)
-            v "Certainly! My greenhouse is the world’s best plant collection!"
+            v "Certainly! My greenhouse is the world's best plant collection!"
     jump koi_thorns_room

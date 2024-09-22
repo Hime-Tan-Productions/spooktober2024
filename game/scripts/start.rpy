@@ -5,7 +5,6 @@
 
 define n = Character(name=None, color="#ffd73a")
 define p = Character(name=None, color="#ffd73a")
-define u = Character("???", color="#ffd73a")
 define v = Character("Vivienne", color="#ffd73a")
 define s = Character("Stephanie", color="#ffd73a")
 define moreno = Character("Moreno", color="#ffd73a")
@@ -26,6 +25,7 @@ label start:
     $met_stephanie = False
 
     $part2_stephanie_conv = False
+    $heard_cowardly_about_seeds = False
 
     $int_corpse_flower = False
     $int_crown_of_thorns = False

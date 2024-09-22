@@ -1,6 +1,6 @@
 label part2_moreno:
     p "I'm sorry if I ask basic questions, Vivienne."
-    p "You see, I’m not the first reporter from The Eyewitness to cover this story."
+    p "You see, I'm not the first reporter from The Greenville Gazette to cover this story."
     p "Did my colleague Moreno contact you?"
     menu:
         v "I've never heard such a name!"
