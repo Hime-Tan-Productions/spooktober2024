@@ -8,8 +8,8 @@ label death_bad_end:
     n "You become the fifth sacirfice to the corpse flower."
     $ renpy.sound.set_volume(1.0,0.0,"sound")
     play sound "eaten by plant.mp3" noloop
-    n "Its sharp teeth shred your body to bits and gulp down what’s left of you." 
-    n "There is no trace left of your murder and you are posthumulusly fired for misisng your deadline."
+    n "Its sharp teeth shred your body to bits and gulp down what's left of you." 
+    n "There is no trace left of your murder and you are posthumously fired for missing your deadline."
     $ renpy.music.set_volume(0.9,0.0,"other")
     play other "death gasp.mp3" noloop
     $ renpy.sound.set_volume(0.0,3.0,"death")
