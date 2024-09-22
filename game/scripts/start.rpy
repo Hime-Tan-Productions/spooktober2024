@@ -13,13 +13,31 @@ define nun = Character("Sister Garcia", color="#ffd73a")
 define howard = Character("Vivienne's Husband", color="#ffd73a")
 
 label start:
-    $flags = {}
+
+# variables
     $journal_people = []
     $journal_story = []
     $journal_todo = []
     $part = 0
     $suspicion = 0
     $max_suspicion = 100
+# flags
+    $met_vivienne = False
+    $met_stephanie = False
+
+    $part2_stephanie_conv = False
+
+    $int_corpse_flower = False
+    $int_crown_of_thorns = False
+    $int_koi_pond = False
+    $int_banana_tree = False
+
+    $clue_moreno = False
+    $clue_stephanie = False
+    $clue_nun = False
+    $clue_howard = False
+
+
     scene black with fade
     #show screen journal_tabs with moveinleft
     show screen suspicion_bar with moveintop

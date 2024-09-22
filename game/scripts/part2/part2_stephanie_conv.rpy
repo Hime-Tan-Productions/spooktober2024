@@ -1,5 +1,5 @@
 label part2_stephanie_conv:
-    $flags["part2_stephanie_conv"] = True
+    $part2_stephanie_conv = True
     menu:
         s "Hello again. Did you enjoy the greenhouse?"
         "No. I found it very disturbing.":

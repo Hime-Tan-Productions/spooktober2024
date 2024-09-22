@@ -1,8 +1,8 @@
 label part1_meet_viv:
     show vivienne conversation
     pause
-    if "met_vivienne" not in flags:
-        $flags["met_vivienne"] = True
+    if not met_vivienne:
+        $met_vivienne = True
     else:
         jump part1_viv_see_flower    
     p "Hi! I’m here with The Eyewitness to cover your corpse flower bloom. It’s nice to meet you!"

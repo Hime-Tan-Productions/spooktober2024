@@ -3,7 +3,7 @@ screen mansion_interior_koi_thorn():
     $right = False
 
     if part == 1:
-        if "met_vivienne" in flags.keys():
+        if met_vivienne:
             $left = True
     if part == 2:
         $left = True
@@ -38,19 +38,19 @@ screen mansion_interior_koi_thorn():
             yalign 0.75
             idle "rosary"
             action Jump("part2_find_rosary")
-        if "p2_viv_koi_pond_int" not in flags.keys():
+        if not int_koi_pond:
             imagebutton:
                 xalign 0.75
                 yalign 0
                 idle "vivienne full"
                 action Jump("part2_viv_koi_pond_interview")
-        elif "p2_viv_crown_of_thorns_int" not in flags.keys():
+        elif not int_crown_of_thorns:
             imagebutton:
                 xalign 0.75
                 yalign 0
                 idle "vivienne full"
                 action Jump("part2_viv_crown_of_thorns_interview")
-        elif "p2_viv_corpse_plant_int" in flags.keys() and "p2_viv_banana_tree_int" in flags.keys():
+        elif int_corpse_flower and int_banana_tree:
             imagebutton:
                 xalign 0.5
                 yalign 0
