@@ -1,5 +1,7 @@
 label part4_start:
     $part = 4
+    scene black with fade
+    n "<part 4 intro. after hiding.>"
     scene bg corpse_plant_night with fade
     p "Night falls. The stench of the corpse plant is unbearable."
     p "But I can't leave. Not now. I have to know."

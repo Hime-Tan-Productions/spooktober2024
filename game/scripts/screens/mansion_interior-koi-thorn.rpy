@@ -22,11 +22,12 @@ screen mansion_interior_koi_thorn():
                 idle "right"
                 action Jump("corpse_plant_room")
     if part == 1:
-        imagebutton:
-            xalign 0.5
-            yalign 0
-            idle "vivienne full"
-            action Jump("part1_meet_viv")
+        if not met_vivienne:
+            imagebutton:
+                xalign 0.5
+                yalign 0
+                idle "vivienne full"
+                action Jump("part1_meet_viv")
     if part == 2:
         imagebutton:
             xalign 0.25

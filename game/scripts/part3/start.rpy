@@ -1,7 +1,10 @@
 label part3_start:
+    scene black with fade
+    n "<part 3 intro. It's time for the showing.>"
     $part = 3
     scene bg corpse_plant_crowd with fade
-    p "Half the county appears to have come to see the corpse plant open to its fully glory. With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook in the hot sun all day."
+    p "Half the county appears to have come to see the corpse plant open to its fully glory."
+    p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook in the hot sun all day."
     p "I’d be emptying my stomach in the ferns if I hadn’t already done that after my first visit to the greenhouse."
 
     show vivienne

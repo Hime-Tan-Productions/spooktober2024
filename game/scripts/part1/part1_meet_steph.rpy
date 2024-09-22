@@ -16,8 +16,7 @@ label part1_steph_qs:
         "What do you think makes the corpse flower so special?":
             jump steph_ask_vivienne
         "That's all.":
-            hide stephanie
-            jump banana_room
+            jump part1_steph_end
 
 label steph_ask_greenhouse:
     p "The corpse flower is blooming."
@@ -110,4 +109,4 @@ label part1_steph_viv:
 
 label part1_steph_end:
     hide stephanie
-    jump banana_room
+    jump part2_start
