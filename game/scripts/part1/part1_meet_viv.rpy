@@ -42,14 +42,8 @@ label part1_viv_couldnt_wait:
     jump part1_viv_see_flower
 
 label part1_viv_see_flower:
-    menu:
-        v "I suppose a sneak peek for the press is good for business."
-        "Yes":
-            v "She's right this way."
-            jump part2_start
-        "Maybe later":
-            v "Tell me when you're ready."
-            jump part1_viv_end
+    v "<v ends conversation and lets you explore>"
+    jump part1_viv_end
 
 label part1_viv_end:
     hide vivienne
