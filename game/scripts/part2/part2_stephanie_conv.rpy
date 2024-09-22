@@ -9,7 +9,7 @@ label part2_stephanie_conv:
                     pass
                 "I may have a few more questions...":
                     menu:
-                        s "You may want to see the plants at night. That might give you some answers I can’t..."
+                        s "You may want to see the plants at night. That might give you some answers I can't..."
                         "What answers?":
                             s "I can't say. You should go."
                         "That sounds suspicious.":
@@ -28,11 +28,11 @@ label part2_stephanie_conv:
                             s "It's one of her secrets. Now leave before it's too late!"
                         "What do you mean by that?":
                             s "Just wait around a bit and you'll see. Now go!"
-    # show viv
+    # show viv?
     v "Stephanie! Stephanie! Where is that lazy girl when you need her?"
-    s "What are you still doing here? We don’t appreciate your kind around here!"
+    s "What are you still doing here? We don't appreciate your kind around here!"
     menu:
-        s "Don’t try to speak to me again you rude journalist!"
+        s "Don't try to speak to me again you rude journalist!"
         "Are you OK?":
             "No! Hurry, before she sees you!"
         "Hey! What was that for?":
