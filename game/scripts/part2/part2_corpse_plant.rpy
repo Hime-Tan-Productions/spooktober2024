@@ -2,6 +2,7 @@ label part2_corpse_plant:
     scene bg corpse_plant with fade
     call screen mansion_interior_corpse_plant
 
+
 label part2_viv_corpse_plant_interview:
     $int_corpse_flower = True
     menu:
@@ -33,6 +34,12 @@ label part2_viv_odd:
 
         "The smell is very overpowering.":
             v "I'll show you something powerful!"
+            $ renpy.music.set_volume(0.0,1.0,"music")
+            $ renpy.sound.set_volume(0.0,0.0,"other")
+            $ renpy.sound.set_volume(0.0,0.0,"noise")
+            $ renpy.sound.set_volume(0.0,0.0,"sound")
+            play death "it was you (harsh horror reveal strings).mp3" loop
+            $ renpy.sound.set_volume(1.0,0.0,"death")
             call suspicion(100, "death_corpse_plant")
 
 
@@ -44,6 +51,12 @@ label part2_viv_scent:
         "I've never smelled anything so foul in my life.":
 
             v "I'll show you something foul!"
+            $ renpy.music.set_volume(0.0,1.0,"music")
+            $ renpy.sound.set_volume(0.0,0.0,"other")
+            $ renpy.sound.set_volume(0.0,0.0,"noise")
+            $ renpy.sound.set_volume(0.0,0.0,"sound")
+            play death "it was you (harsh horror reveal strings).mp3" loop
+            $ renpy.sound.set_volume(1.0,0.0,"death")
             call suspicion(100, "death_corpse_plant")
     jump part2_viv_aroma
 

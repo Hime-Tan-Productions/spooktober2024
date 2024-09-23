@@ -14,13 +14,14 @@ screen mansion_interior_koi_thorn():
                 xalign 0.1
                 yalign 0.5
                 idle "left"
-                action Jump("banana_room")
+                action [Stop("ambience", fadeout=2.0),Pause(1.0),Stop("other"),Stop("noise"),Jump("banana_room")]
+
     if right:
             imagebutton:
                 xalign 0.9
                 yalign 0.5
                 idle "right"
-                action Jump("corpse_plant_room")
+                action [Stop("ambience", fadeout=2.0),Pause(1.0),Stop("other"),Stop("noise"),Play("sound","insect sounds 3.mp3"),Function(renpy.sound.set_volume, 0.6, channel="sound"),Jump("corpse_plant_room")]
     if part == 1:
         if not met_vivienne:
             imagebutton:

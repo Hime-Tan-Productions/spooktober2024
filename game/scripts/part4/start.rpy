@@ -1,8 +1,14 @@
 label part4_start:
     $part = 4
     scene black with fade
+    $ renpy.sound.set_volume(0.0,1.0,"ambience")
+    $ renpy.sound.set_volume(0.0,1.0,"noise")
+    $ renpy.sound.set_volume(0.0,1.0,"sound")
+    $ renpy.music.set_volume(1.0,0.0,"music")
+    play music "moody progression (halloween ambience).mp3"
     n "<part 4 intro. after hiding.>"
     scene bg corpse_plant_night with fade
+    $ renpy.sound.set_volume(1.0,0.0,"sound")
     p "Night falls. The stench of the corpse plant is unbearable."
     p "But I can't leave. Not now. I have to know."
     p "The smell is making me delirious. I stumble out from behind the plant toward the corpse plant."
@@ -55,7 +61,11 @@ label part4_start:
             call suspicion(100, "death_bad_end")
     n "Vivienne lunges forward to tackle you, but you duck first."
     p "This one's for Stephanie!"
+    $ renpy.sound.set_volume(1.0,0.0,"sound")
+    play sound "vivenne death 2.mp3" noloop
     n "Vivienne screams as you toss her into the jaws of the corpse flower."
     n "Her screams fill the greenhouse as she is ripped apart by her precious creation."
     n "The plant licks up every last bit of her flesh with its giant tongue and lets out a loud belch."
+    $ renpy.sound.set_volume(1.0,0.0,"noise")
+    play noise "burp.mp3" noloop
     jump credits

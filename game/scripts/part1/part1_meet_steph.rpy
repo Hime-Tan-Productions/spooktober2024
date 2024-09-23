@@ -1,5 +1,6 @@
 label part1_meet_steph:
     $met_stephanie = True
+    $ renpy.sound.set_volume(0.0,0.5,"other")
     show stephanie conversation
     pause
     p "I didn't mean to frighten you, miss. I'm just here to ask some questions about the greenhouse."

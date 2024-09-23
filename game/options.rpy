@@ -194,6 +194,12 @@ init python:
     build.documentation('*.html')
     build.documentation('*.txt')
 
+    renpy.music.register_channel("nature", "sfx")
+    renpy.music.register_channel("ambience", "sfx")
+    renpy.music.register_channel("noise", "sfx")
+    renpy.music.register_channel("other", "sfx")
+    renpy.music.register_channel("death", "sfx")
+
 
 ## A Google Play license key is required to perform in-app purchases. It can be
 ## found in the Google Play developer console, under "Monetize" > "Monetization
