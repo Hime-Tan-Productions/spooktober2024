@@ -70,7 +70,7 @@ label part2_viv_aroma:
             p "What a splendid idea!"
         "Why do you grow this flower if it smells so bad?":
             menu:
-                v "Just look at this beauty! It's a magnificent magenta, don't you think?"
+                v "Just look at this beauty! It's magnificent, don't you think?"
                 "Of course! I've never witnessed such beauty!":
                     call suspicion(-5)
                 "I prefer tulips.":
@@ -78,7 +78,7 @@ label part2_viv_aroma:
 
         "How can you stand the smell?":
             v "My flower is magnificent. It's you I can't stand!"
-            call suspicion(100)
+            call suspicion(100, "death_corpse_plant")
 
     jump part2_viv_infrequent_blooms
 

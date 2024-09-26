@@ -15,7 +15,7 @@ label part2_viv_banana_tree_interview:
                 n "What is this woman's deal? I can't wait to get out of here!"
                 "What is the best way to get a new plant?":
                     call suspicion(5)
-                    v "V  You use nature to your advantage, of course. It's how I have the biggest and brightest blooms around."
+                    v "You use nature to your advantage, of course. It's how I have the biggest and brightest blooms around."
                     n "These aren't the gardening tips I was hoping for."
                     n "Maybe I should learn more about Howard."
                 "What is cowardly about seeds?":

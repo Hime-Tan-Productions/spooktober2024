@@ -5,7 +5,7 @@ label death_bad_end:
     $ renpy.sound.set_volume(0.0,0.0,"sound")
     play death "it was you (harsh horror reveal strings).mp3" loop
     $ renpy.sound.set_volume(1.0,0.0,"death")
-    n "You become the fifth sacirfice to the corpse flower."
+    n "You become the fifth sacrifice to the corpse flower."
     $ renpy.sound.set_volume(1.0,0.0,"sound")
     play sound "eaten by plant.mp3" noloop
     n "Its sharp teeth shred your body to bits and gulp down what's left of you." 

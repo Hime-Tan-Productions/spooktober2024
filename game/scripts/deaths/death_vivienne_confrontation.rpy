@@ -7,10 +7,10 @@ label death_vivienne_confrontation:
     play death "it was you (harsh horror reveal strings).mp3" loop
     $ renpy.sound.set_volume(1.0,0.0,"death")
     $ renpy.music.set_volume(1.0,0.0,"sound")
-    n "I go seek out Vivienne."
+    n "Vivienne emerges from the mist of the greenhouse."
     $ renpy.music.set_volume(1.0,0.0,"sound")
     play sound "sword-drawing.mp3" noloop
-    n "But she finds me first."
+    n "The steel of her shovel meets your head with enough force to knock you out instantly."
     $ renpy.music.set_volume(0.9,0.0,"nature")
     play nature "stab sound 2.mp3" noloop
     n "I feel the cold steel of her garden sheers slip into my back."
@@ -23,4 +23,3 @@ label death_vivienne_confrontation:
     $ renpy.sound.set_volume(0.0,3.0,"death")
     $ renpy.music.set_volume(0.6,3.0,"music")
     play music "garden trip hop esque groove with birds.mp3" loop 
-

@@ -4,6 +4,9 @@ label part1_meet_steph:
     show stephanie conversation
     pause
     p "I didn't mean to frighten you, miss. I'm just here to ask some questions about the greenhouse."
+    s "Oh heavens! I didn't know someone else was here."
+    p "Yes, Vivienne told me to come find you. I could barely see you hiding behind that tree!"
+    s "It's a good place to hide from Vivienne."
     jump part1_steph_qs
 
 label part1_steph_qs:
@@ -45,7 +48,7 @@ label steph_ask_hiding:
 
 label steph_ask_readers:
     s "Readers?"
-    p "Yes. I'm <player name>. I'm a reporter for The Greenville Gazette. Just trying to find out more about the plants from the people who know them best."
+    p "Yes. I'm Asa Miller. I'm a reporter for The Greenville Gazette. Just trying to find out more about the plants from the people who know them best."
     menu:
         s "Oh. I'm Stephanie. Stephanie Graham. I, um, thought you were investigating the plants for…other reasons."
         "Investigating? Did you think I was a detective?":

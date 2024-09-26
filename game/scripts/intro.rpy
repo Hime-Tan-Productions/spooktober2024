@@ -11,7 +11,7 @@ label intro:
     play nature "ducks 2.mp3" loop
     $ renpy.sound.set_volume(0.5,0,"nature")   
     p "Guess I'll have to write my notes down for now."
-    n "The Corpse Flower\nBy UX, Associate Managing Editor"
+    n "The Corpse Flower\nBy Asa Miller, Associate Managing Editor"
 
     p "At least with Moreno gone, I got a promotion! Now if only I'd get a raise too…"
     $ renpy.sound.set_volume(0.0,1.0,"sound")
