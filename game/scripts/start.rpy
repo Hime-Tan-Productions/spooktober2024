@@ -37,6 +37,8 @@ label start:
     $clue_nun = False
     $clue_howard = False
 
+    # if debug sus controls are needed
+    show screen debug_screen
 
     scene black with fade
     #show screen journal_tabs with moveinleft
