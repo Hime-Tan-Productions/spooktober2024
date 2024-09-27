@@ -1,5 +1,5 @@
 label debug(error):
-    $renpy.notify("Encountered an error: %(error)s")
+    $renpy.notify("Error: " + str(error))
     pause
 
 label debug_sus_max:

@@ -13,7 +13,7 @@ label part2_viv_corpse_plant_interview:
             call suspicion(-10)
             jump part2_viv_scent
         "It's a little odd, isn't it?":
-            call suspicion(25)
+            call suspicion(25, "death_corpse_plant")
             jump part2_viv_odd
 
 label part2_viv_odd:
@@ -74,7 +74,7 @@ label part2_viv_aroma:
                 "Of course! I've never witnessed such beauty!":
                     call suspicion(-10)
                 "I prefer tulips.":
-                    call suspicion(25)
+                    call suspicion(25, "death_corpse_plant")
 
         "How can you stand the smell?":
             v "My flower is magnificent. It's you I can't stand!"
@@ -101,7 +101,7 @@ label part2_viv_infrequent_blooms:
                             v "In that case, I'd love to show you the rest of my plants!"
                             call suspicion(-10)
                         "Just trying to get my word count up for the article.":
-                            call suspicion(25)
+                            call suspicion(25, "death_corpse_plant")
                             v "If word count is what you're after, I can show you the rest of my plants."
                 "How many times has this flower bloomed?":
                     menu:
@@ -109,15 +109,15 @@ label part2_viv_infrequent_blooms:
                         "This one must be extra special! The third time is the charm.":
                             call suspicion(-10)
                         "How have you been so lucky?":
-                            call suspicion(25)
+                            call suspicion(25, "death_corpse_plant")
                             menu:
                                 v "Isn't it obvious? I'm the finest botanist in the U.S. Probably the world!"
                                 "Of course you are.":
                                     call suspicion(-10)
                                 "If you say so.":
-                                    call suspicion(25)
+                                    call suspicion(25, "death_corpse_plant")
         "Maybe it's a good thing.":
-            call suspicion(25)
+            call suspicion(25, "death_corpse_plant")
             menu:
                 v "Do you believe my work is not important?"
                 "I just don't think we need this stinking up the town any more often.":

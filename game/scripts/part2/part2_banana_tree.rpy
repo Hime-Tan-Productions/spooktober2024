@@ -9,12 +9,12 @@ label part2_viv_banana_tree_interview:
     menu:
         v "My husband Howard grew it from a single seed."
         "That's impressive!":
-            call suspicion(25)
+            call suspicion(25, "death_banana")
             v "Not at all! It's a cowardly way to get a new plant."
             menu:
                 n "What is this woman's deal? I can't wait to get out of here!"
                 "What is the best way to get a new plant?":
-                    call suspicion(25)
+                    call suspicion(25, "death_banana")
                     v "You use nature to your advantage, of course. It's how I have the biggest and brightest blooms around."
                     n "These aren't the gardening tips I was hoping for."
                     n "Maybe I should learn more about Howard."
@@ -25,7 +25,7 @@ label part2_viv_banana_tree_interview:
                     menu:
                         v "Howard never had the guts like me!"
                         "How do you grow your plants then?":
-                            call suspicion(25)
+                            call suspicion(25, "death_banana")
                             v "Ask me about my trade secrets one more time and you'll regret it."
                         "Why didn't Howard have the guts?":
                             call suspicion(-10)
@@ -35,7 +35,7 @@ label part2_viv_banana_tree_interview:
             menu:
                 v "I am! Howard never agreed with me on the best gardening methods."
                 "What did you disagree on?":
-                    call suspicion(25)
+                    call suspicion(25, "death_banana")
                     v "Howard was never as… innovative as I am."
                 "What are the best gardening methods?":
                     call suspicion(-10)
@@ -56,7 +56,7 @@ label part2_bt_howard:
         menu:
             v "Seeds are for the weak. I'm willing to go the extra mile for my plants."
             "How do you grow your plants then?":
-                call suspicion(25)
+                call suspicion(25, "death_banana")
                 v "Ask me about my trade secrets one more time and you'll regret it."
             "Why didn't Howard have the guts?":
                 call suspicion(-10)

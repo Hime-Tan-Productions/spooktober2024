@@ -27,7 +27,7 @@ label part2_koi_nice:
     menu:
         v "I know! Gives the greenhouse a little something extra."
         "I could stay here all day!":
-            call suspicion(25)
+            call suspicion(25, "death_koi_pond")
             v "I hope you'll be leaving soon."
         "It seems odd that everything in the greenhouse has something extra.":
             call suspicion(-10)

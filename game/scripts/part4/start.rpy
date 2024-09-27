@@ -48,13 +48,13 @@ label part4_start:
             menu:
                 v "Of course it's talking! It tells me to feed her more, more! Every body brings a new bloom!"
                 "That's not what I heard.":
-                    call suspicion(25)
+                    call suspicion(25, "death_corpse_plant")
                     v "How dare you! This plant speaks only to me!"
                 "Is that where Stephanie went?":
                     call suspicion(-10)
                     v "Stephanie was a lousy botanist! Her blood will make my plants grow bigger and better than she ever could!"
         "How many people have you killed here?":
-            call suspicion(25)
+            call suspicion(25, "death_corpse_plant")
             v "That's none of your business! I should have you arrested for trespassing!"
         "You'll never get away with this!":
             v "Of course I will! I always do! My girl needs to feed!"
