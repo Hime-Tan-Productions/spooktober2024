@@ -40,7 +40,7 @@ label part4_start:
 
     p "I'd better get out before I'm next!"
     p "Uh oh…"
-    show vivienne
+    show vivienne angry_folded
     menu:
         v "You nosy journalist! How dare you be in here without my permission!"
         "I think your plant is talking!":

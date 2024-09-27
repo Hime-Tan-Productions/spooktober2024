@@ -6,6 +6,7 @@ label suspicion(dmg, ending=None):
         $suspicion = max_suspicion
         scene black with fade
         hide screen suspicion with moveouttop
+        show vivienne angry_folded
         $renpy.call("" + ending)
         show red_flash
         pause 1

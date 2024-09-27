@@ -1,5 +1,5 @@
 label part1_meet_viv:
-    show vivienne conversation
+    show vivienne neutral_armup
     pause
     if not met_vivienne:
         $met_vivienne = True
