@@ -16,7 +16,7 @@ label part3_start:
     $ renpy.sound.set_volume(0.9,1.0,"nature")
     play nature "flies 2.mp3" noloop
     p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook on a hot summer day."
-    p "I'd be emptying my stomach in the ferns if I hadn't already done that after my first visit to the greenhouse."
+    p "I'd be emptying my stomach in the ferns if I hadn't already."
 
     show vivienne
     $ renpy.sound.set_volume(0.0,2.0,"nature")
@@ -34,7 +34,10 @@ label part3_start:
     menu:
         p "What should I do?"
         "I have enough for my story. Time to move on.":
-            call suspicion(100, "ending_walk_away")
+            n "I didn't find anything that makes it worth staying to investigate more."
+            n "It's going to be hard to write a good story with so little information."
+            n "Oh well, I'm going to just move on."
+
         "I want to know more.":
             p "Something is wrong."
             $chosen = []
