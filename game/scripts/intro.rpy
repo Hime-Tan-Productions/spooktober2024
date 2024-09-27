@@ -16,10 +16,9 @@ label intro:
     p "At least with Moreno gone, I got a promotion! Now if only I'd get a raise too…"
     $ renpy.sound.set_volume(0.0,1.0,"sound")
 
-    p "June 21, 1926: corpse flower should bloom tonight. Hundreds of visitors coming to see it."
+    p "June 21, 1926: Corpse flower should bloom tonight. Hundreds of visitors coming to see it."
     p "Vivienne has been running the greenhouse since her husband died earlier this year."
     p "It's hard to write with my palms so sweaty. Why do I always get so nervous before interviews? I've done hundreds of them."
     p "I just have to talk to the greenhouse owner. This should be a simple story."
 
-    p "Guess I'll have to write my notes down for now."
     call screen mansion_exterior

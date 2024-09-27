@@ -11,7 +11,7 @@ label part1_start:
     $ renpy.sound.set_volume(0.25,0.0,"other")
     play noise "sprinkler system 2.mp3" loop
     $ renpy.sound.set_volume(0.4,0.0,"noise")
-    n "The greenhouse welcomes you with a strong scent of vanilla, plus a hint of death. Must be the corpse flower…"
+    n "The greenhouse welcomes you with a strong scent of vanilla, plus a hint of something rotten. Must be the corpse flower…"
     call screen mansion_interior_koi_thorn
 
 label part1_main:

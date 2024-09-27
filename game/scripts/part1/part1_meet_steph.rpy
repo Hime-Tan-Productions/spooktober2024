@@ -3,10 +3,12 @@ label part1_meet_steph:
     $ renpy.sound.set_volume(0.0,0.5,"other")
     show stephanie conversation
     pause
-    p "I didn't mean to frighten you, miss. I'm just here to ask some questions about the greenhouse."
+    p "Hello?"
     s "Oh heavens! I didn't know someone else was here."
     p "Yes, Vivienne told me to come find you. I could barely see you hiding behind that tree!"
     s "It's a good place to hide from Vivienne."
+    p "I didn't mean to frighten you, miss. I'm just here to ask some questions about the greenhouse."
+
     jump part1_steph_qs
 
 label part1_steph_qs:
@@ -18,16 +20,14 @@ label part1_steph_qs:
             jump steph_ask_vivienne
 
 label steph_ask_greenhouse:
-    p "The corpse flower is blooming."
     s "Yes. The whole town has come to see it. "
-    p "Stephanie shifts her eyes left and right..."
+    p "Stephanie shifts her eyes left and right…"
     jump steph_nervous
 
 label steph_ask_vivienne:
-    p "What do you think makes the corpse flower so special?"
     show stephanie scared
-    s "..."
-    p "Stephanie shifts her eyes left and right..."
+    s "…"
+    p "Stephanie shifts her eyes left and right…"
     show stephanie conversation
     s "Special? Um… well… Vivienne isn't your typical botanist… she… um… has her ways of doing things. "
     jump steph_nervous
@@ -50,7 +50,7 @@ label steph_ask_readers:
     s "Readers?"
     p "Yes. I'm Asa Miller. I'm a reporter for The Greenville Gazette. Just trying to find out more about the plants from the people who know them best."
     menu:
-        s "Oh. I'm Stephanie. Stephanie Graham. I, um, thought you were investigating the plants for…other reasons."
+        s "Oh. I'm Stephanie. Stephanie Graham. I, um, thought you were investigating the plants for… other reasons."
         "Investigating? Did you think I was a detective?":
             jump steph_ask_detective
         "Like a rival gardener? I have killed far too many tomato plants to consider myself a green thumb.":

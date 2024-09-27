@@ -13,7 +13,6 @@ label death_vivienne_confrontation:
     n "The steel of her shovel meets your head with enough force to knock you out instantly."
     $ renpy.music.set_volume(0.9,0.0,"nature")
     play nature "stab sound 2.mp3" noloop
-    n "I feel the cold steel of her garden sheers slip into my back."
     v "I've had quite enough of your questions."
     v "You'll no longer be writing this story."
     v "You'll be part of it."
