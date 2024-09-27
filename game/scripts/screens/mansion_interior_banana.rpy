@@ -32,5 +32,5 @@ screen mansion_interior_banana():
             imagebutton:
                 xalign 0.75
                 yalign 0
-                idle "vivienne full"
+                idle "vivienne full_day"
                 action Jump("part2_viv_banana_tree_interview")

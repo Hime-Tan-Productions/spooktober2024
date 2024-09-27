@@ -52,7 +52,7 @@ label part3_start:
             n "I didn't find anything that makes it worth staying to investigate more."
             n "It's going to be hard to write a good story with so little information."
             n "Oh well, I'm going to just move on."
-            jump 
+            jump ending_walk_away
         "I want to know more.":
             p "Something is wrong."
             $chosen = []
