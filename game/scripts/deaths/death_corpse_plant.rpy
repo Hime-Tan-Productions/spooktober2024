@@ -1,5 +1,5 @@
 label death_corpse_plant:
-    show vivienne angry
+    show vivienne angry_folded
     $ renpy.music.set_volume(1.0,0.0,"sound")
     play sound "sword-drawing.mp3" noloop
     n "You hear the garden shears before you see them."

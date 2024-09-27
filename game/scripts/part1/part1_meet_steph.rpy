@@ -1,7 +1,7 @@
 label part1_meet_steph:
     $met_stephanie = True
     $ renpy.sound.set_volume(0.0,0.5,"other")
-    show stephanie conversation
+    show stephanie neutral_lookingdown
     pause
     p "Hello?"
     s "Oh heavens! I didn't know someone else was here."
@@ -28,7 +28,7 @@ label steph_ask_vivienne:
     show stephanie scared
     s "…"
     p "Stephanie shifts her eyes left and right…"
-    show stephanie conversation
+    show stephanie neutral_lookingdown_handsup
     s "Special? Um… well… Vivienne isn't your typical botanist… she… um… has her ways of doing things. "
     jump steph_nervous
 

@@ -1,34 +1,49 @@
 label part3_start:
+
     scene black with fade
+
     $ renpy.sound.set_volume(0.0,1.0,"sound")
     $ renpy.sound.set_volume(0.0,1.0,"noise")
     $ renpy.sound.set_volume(0.0,1.0,"ambience")
     $ renpy.sound.set_volume(0.0,1.0,"other")
     $ renpy.sound.set_volume(0.0,1.0,"nature")
     play music "creepy wind chime melody.mp3"
+
     $part = 3
+
     scene bg corpse_plant_crowd with fade
     $ renpy.sound.set_volume(0.6,1.0,"sound")
     play sound "insect sounds 3.mp3" loop
     $ renpy.sound.set_volume(0.6,1.0,"noise")
     play noise "crowd 2.mp3" loop
+
     p "Half the county appears to have come to see the corpse plant open to its full glory."
+
     $ renpy.sound.set_volume(0.9,1.0,"nature")
     play nature "flies 2.mp3" noloop
+
     p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook on a hot summer day."
     p "I'd be emptying my stomach in the ferns if I hadn't already."
 
-    show vivienne
+    show vivienne happy_armup
+    
     $ renpy.sound.set_volume(0.0,2.0,"nature")
+    
     v "Ladies and gentleman, I present to you the eighth wonder of the world!"
+    
     $ renpy.sound.set_volume(0.8,0.0,"other")
     play other "applause 2.mp3" noloop
     v "Here you see that my girl has done it again. Her third bloom this year! I see many more in her future."
     v "Take as many photos as you wish! Make sure you get both our good sides!"
+    
+    hide vivienne
+
     n "<wait for player to click on Stephanie's glasses>"
+
     $ renpy.sound.set_volume(0.0,2.0,"music")
     $ renpy.sound.set_volume(0.6,0.5,"ambience")
     play ambience "corpse flower mystic mix.mp3"
+    
     p "Where's Stephanie? Something tells me this can't be good…"
     v "No time for questions! Everyone out by sundown. My girl needs her beauty sleep."
     menu:
@@ -37,7 +52,7 @@ label part3_start:
             n "I didn't find anything that makes it worth staying to investigate more."
             n "It's going to be hard to write a good story with so little information."
             n "Oh well, I'm going to just move on."
-
+            jump ending_walk_away
         "I want to know more.":
             p "Something is wrong."
             $chosen = []

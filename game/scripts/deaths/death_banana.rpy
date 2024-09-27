@@ -1,5 +1,5 @@
 label death_banana:
-    show vivienne angry
+    show vivienne angry_folded
 
     $ renpy.music.set_volume(0.0,1.0,"music")
     $ renpy.sound.set_volume(0.0,0.0,"other")

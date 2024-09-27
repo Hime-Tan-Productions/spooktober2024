@@ -3,7 +3,7 @@ label part2_banana_tree:
     call screen mansion_interior_banana
 
 label part2_viv_banana_tree_interview:
-    show vivienne conversation
+    show vivienne happy_armup
     $int_banana_tree = True
     v "I see you found my banana tree!"
     menu:

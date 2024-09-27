@@ -8,7 +8,7 @@ screen mansion_interior_corpse_plant():
             imagebutton:
                 xalign 0.5
                 yalign 0
-                idle "vivienne full"
+                idle "vivienne full_day"
                 action Jump("part2_viv_corpse_plant_interview")
 
 

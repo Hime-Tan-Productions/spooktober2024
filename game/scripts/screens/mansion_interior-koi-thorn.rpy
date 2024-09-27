@@ -27,7 +27,7 @@ screen mansion_interior_koi_thorn():
             imagebutton:
                 xalign 0.5
                 yalign 0
-                idle "vivienne full"
+                idle "vivienne full_day"
                 action Jump("part1_meet_viv")
     if part == 2:
         imagebutton:
@@ -44,17 +44,17 @@ screen mansion_interior_koi_thorn():
             imagebutton:
                 xalign 0.75
                 yalign 0
-                idle "vivienne full"
+                idle "vivienne full_day"
                 action Jump("part2_viv_koi_pond_interview")
         elif not int_crown_of_thorns:
             imagebutton:
                 xalign 0.75
                 yalign 0
-                idle "vivienne full"
+                idle "vivienne full_day"
                 action Jump("part2_viv_crown_of_thorns_interview")
         elif int_corpse_flower and int_banana_tree:
             imagebutton:
                 xalign 0.5
                 yalign 0
-                idle "stephanie full"
+                idle "stephanie full_day"
                 action Jump("part2_stephanie_conv")
