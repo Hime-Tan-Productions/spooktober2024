@@ -21,11 +21,11 @@ label part1_viv_qs:
             jump part1_viv_couldnt_wait
 
 label part1_viv_flower_questions:
-    call suspicion(20)
+    call suspicion(20, "death_corpse_plant")
     menu:
         v "Why would you do such a thing! Don't you know it's rude to show up unannounced?"
         "I'm sorry. I know this time is difficult for you. I'm sorry to hear about your husband.":
-            call suspicion(25)
+            call suspicion(25, "death_corpse_plant")
             v "What about my husband? Would you be asking me these questions if I were a man? My plants bloom better than ever with him gone!"
             jump part1_viv_see_flower
         "I would have called earlier, but my boss cut the phone cord when he was angry.":
@@ -38,7 +38,7 @@ label part1_viv_laugh:
             call suspicion(-10)
             jump part1_viv_see_flower
         "Don't laugh":
-            call suspicion(25)
+            call suspicion(25, "death_corpse_plant")
             jump part1_viv_see_flower
 
 label part1_viv_couldnt_wait:
