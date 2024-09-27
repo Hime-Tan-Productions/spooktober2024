@@ -6,7 +6,6 @@ label part3_start:
     $ renpy.sound.set_volume(0.0,1.0,"other")
     $ renpy.sound.set_volume(0.0,1.0,"nature")
     play music "creepy wind chime melody.mp3"
-    n "<part 3 intro. It's time for the showing.>"
     $part = 3
     scene bg corpse_plant_crowd with fade
     $ renpy.sound.set_volume(0.6,1.0,"sound")
@@ -16,7 +15,7 @@ label part3_start:
     p "Half the county appears to have come to see the corpse plant open to its full glory."
     $ renpy.sound.set_volume(0.9,1.0,"nature")
     play nature "flies 2.mp3" noloop
-    p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook in the hot sun all day."
+    p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook on a hot summer day."
     p "I'd be emptying my stomach in the ferns if I hadn't already done that after my first visit to the greenhouse."
 
     show vivienne
@@ -30,7 +29,7 @@ label part3_start:
     $ renpy.sound.set_volume(0.0,2.0,"music")
     $ renpy.sound.set_volume(0.6,0.5,"ambience")
     play ambience "corpse flower mystic mix.mp3"
-    p "Where's Stephanie? Something tells me this can't be good..."
+    p "Where's Stephanie? Something tells me this can't be good…"
     v "No time for questions! Everyone out by sundown. My girl needs her beauty sleep."
     menu:
         p "What should I do?"
@@ -44,7 +43,7 @@ label part3_start:
 label ask_clues:
     menu:
         set chosen
-        p "I need to know..."
+        p "I need to know…"
         "Did Moreno really quit?":
             p "I think he may have died while trying to cover this story."
             jump ask_clues

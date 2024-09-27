@@ -3,8 +3,8 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define n = Character(name=None, color="#ffd73a")
-define p = Character(name=None, color="#ffd73a")
+define n = Character(name=None, color="#ffd73a", what_italic = True)
+define p = Character(name="Asa", color="#ffd73a")
 define v = Character("Vivienne", color="#ffd73a")
 define s = Character("Stephanie", color="#ffd73a")
 define moreno = Character("Moreno", color="#ffd73a")

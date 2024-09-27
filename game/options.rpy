@@ -205,7 +205,7 @@ init python:
 ## found in the Google Play developer console, under "Monetize" > "Monetization
 ## Setup" > "Licensing".
 
-# define build.google_play_key = "..."
+# define build.google_play_key = "…"
 
 
 ## The username and project name associated with an itch.io project, separated

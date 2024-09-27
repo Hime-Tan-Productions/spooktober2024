@@ -13,7 +13,7 @@ label part2_viv_corpse_plant_interview:
             call suspicion(-10)
             jump part2_viv_scent
         "It's a little odd, isn't it?":
-            call suspicion(10)
+            call suspicion(25)
             jump part2_viv_odd
 
 label part2_viv_odd:
@@ -29,7 +29,7 @@ label part2_viv_odd:
                     call suspicion(100, "death_corpse_plant")
                     jump part2_viv_aroma
                 "No":
-                    call suspicion(-5)
+                    call suspicion(-10)
                     jump part2_viv_aroma
 
         "The smell is very overpowering.":
@@ -72,9 +72,9 @@ label part2_viv_aroma:
             menu:
                 v "Just look at this beauty! It's magnificent, don't you think?"
                 "Of course! I've never witnessed such beauty!":
-                    call suspicion(-5)
+                    call suspicion(-10)
                 "I prefer tulips.":
-                    call suspicion(10)
+                    call suspicion(25)
 
         "How can you stand the smell?":
             v "My flower is magnificent. It's you I can't stand!"
@@ -99,9 +99,9 @@ label part2_viv_infrequent_blooms:
                         v "Why focus on the past? You have the privilege of seeing this marvel in the present!"
                         "Right. I'm grateful for the honor.":
                             v "In that case, I'd love to show you the rest of my plants!"
-                            call suspicion(-5)
+                            call suspicion(-10)
                         "Just trying to get my word count up for the article.":
-                            call suspicion(5)
+                            call suspicion(25)
                             v "If word count is what you're after, I can show you the rest of my plants."
                 "How many times has this flower bloomed?":
                     menu:
@@ -109,15 +109,15 @@ label part2_viv_infrequent_blooms:
                         "This one must be extra special! The third time is the charm.":
                             call suspicion(-10)
                         "How have you been so lucky?":
-                            call suspicion(5)
+                            call suspicion(25)
                             menu:
                                 v "Isn't it obvious? I'm the finest botanist in the U.S. Probably the world!"
                                 "Of course you are.":
-                                    call suspicion(-5)
+                                    call suspicion(-10)
                                 "If you say so.":
-                                    call suspicion(5)
+                                    call suspicion(25)
         "Maybe it's a good thing.":
-            call suspicion(5)
+            call suspicion(25)
             menu:
                 v "Do you believe my work is not important?"
                 "I just don't think we need this stinking up the town any more often.":

@@ -1,22 +1,22 @@
 label part2_stephanie_conv:
     $part2_stephanie_conv = True
     menu:
-        s "Hello again. Did you enjoy the greenhouse?"
+        s "Hello again. Have you been enjoying the greenhouse?"
         "No. I found it very disturbing.":
             menu:
                 s "I see. You must have plenty of information for your article then."
                 "Yes I do.":
                     pass
-                "I may have a few more questions...":
+                "I may have a few more questions…":
                     menu:
-                        s "You may want to see the plants at night. That might give you some answers I can't..."
+                        s "You may want to see the plants at night. That might give you some answers I can't…"
                         "What answers?":
                             s "I can't say. You should go."
                         "That sounds suspicious.":
                             s "You're right. You should go."
         "I did! The plants are very peaceful.":
             s "I'm so happy to hear that. Please come back later to see the bloom."
-        "It's definitely... interesting.":
+        "It's definitely… interesting.":
             menu:
                 s "What did you find so interesting?"
                 "Your boss":
