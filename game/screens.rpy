@@ -319,6 +319,8 @@ screen navigation():
 
         textbutton _("About") action ShowMenu("about")
 
+        textbutton _("Credits") action ShowMenu("credits")
+
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
@@ -566,6 +568,7 @@ screen about():
             text _("Created by Hime-tan Productions.\n")
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
             text _("LUCKY TYPEWRITER font has been created by Lukas Krakora and is free for non-commercial use only. To use the font commercially, please contact them at krraaa@yahoo.com for information about pricing.")
+            text _("Outline shader created from example by {a=https://github.com/RenpyRemix/outline-shader}RenpyRemix{/a}")
 
 style about_label is gui_label
 style about_label_text is gui_label_text
@@ -574,6 +577,23 @@ style about_text is gui_text
 style about_label_text:
     size gui.label_text_size
 
+screen credits():
+    tag menu
+
+    use game_menu(("Credits"), scroll="viewport"):
+
+        style_prefix "about"
+
+        vbox:
+
+            label "[config.name!t]"
+            text "By Hime-Tan Productions"
+            text "Story by Cassie"
+            text "Character art by {a=https://flavies.carrd.co/}Flavies{/a}"
+            text "BGM and SFX by Isabella"
+            text "Environment art by Psybelle"
+            text "Scripting by TJ"
+            text "UX by Yoshi"
 
 ## Load and Save screens #######################################################
 ##
