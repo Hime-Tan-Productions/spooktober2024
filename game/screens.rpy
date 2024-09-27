@@ -563,11 +563,19 @@ screen about():
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
-                text "[gui.about!t]\n"
+                text "[gui.about!t]"
 
-            text _("Created by Hime-tan Productions.\n")
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]\n")
-            text _("LUCKY TYPEWRITER font has been created by Lukas Krakora and is free for non-commercial use only. To use the font commercially, please contact them at krraaa@yahoo.com for information about pricing.")
+            text _("Created by Hime-tan Productions.")
+            text _("\n")
+
+            label "Tools Used"
+            text _("{a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].")
+            text _("Sublime text")
+            text _("paint.net")
+            text _("\n")
+
+            label "Assets Used"
+            text _("LUCKY TYPEWRITER font by Lukas Krakora {a=https://www.typewriterfonts.net/about}typewriterfonts.net{/a}")
             text _("Outline shader created from example by {a=https://github.com/RenpyRemix/outline-shader}RenpyRemix{/a}")
 
 style about_label is gui_label
