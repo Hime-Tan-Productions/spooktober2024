@@ -3,7 +3,7 @@
 
 # fixed compatibility with partially alpha'd images by changing baked-in threshold. It should really be an arg.
 
-define config.gl2 = True
+#define config.gl2 = True
 
 init python:
 
@@ -62,10 +62,11 @@ bool find_opaque(float x, float y, vec2 pos, vec2 pxo, float lod, sampler2D tex0
 float opaque_distance(vec2 pos, float lod, sampler2D tex0, float threshold, 
                       float u_width, vec2 pixel_size, float max_dist) {
     float nearest = 0.0;
-    for (float x = 1.0; x <= u_width; x += 1.0) {
-        float x_dist = pow(x, 2);
-        for (float y = 0.0; y <= x; y += 1.0) {
-            float d = pow(y, 2) + x_dist;
+    const float MAX_ITERS = 100.0;
+    for (float x = 1.0; x <= MAX_ITERS; x += 1.0) {
+        float x_dist = pow(x, 2.0);
+        for (float y = 0.0; y <= MAX_ITERS; y += 1.0) {
+            float d = pow(y, 2.0) + x_dist;
             if (nearest > 0.1) max_dist = nearest;
             if (d > max_dist) break;
 
@@ -89,12 +90,12 @@ float opaque_distance(vec2 pos, float lod, sampler2D tex0, float threshold,
         """,
         fragment_300="""
 vec2 padded_size = u_model_size;
-if (u_mesh_pad > 0.5) padded_size += vec2(u_width) * 2;
+if (u_mesh_pad > 0.5) padded_size += vec2(u_width) * 2.0;
 
 vec2 pos = v_tex_coord.xy;
 vec2 pixel_size = (vec2(1.) / padded_size);
 
-float max_dist = pow(u_width, 2);
+float max_dist = pow(u_width, 2.0);
 
 // only want outlines where the image is part or fully transparent
 if (gl_FragColor.a < 0.01) {
