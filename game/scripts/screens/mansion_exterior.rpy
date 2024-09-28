@@ -1,6 +1,6 @@
 screen mansion_exterior():
         imagebutton at animated_outline:
-            xalign 0.5
-            yalign 0.5
+            xpos 791
+            ypos 465
             idle "doors"
             action Jump("part1_start")

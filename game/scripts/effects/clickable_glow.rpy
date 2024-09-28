@@ -138,7 +138,7 @@ if (gl_FragColor.a < 0.01) {
 ##           which will appear as a form of anti-aliasing
 ## mesh_pad: whether to pad out the image to make extra room for the outline
 transform outline(
-        width=10.0, 
+        width=5.0,
         threshold=0.01, 
         color="#FFF", 
         step_start=0.0, 
@@ -159,3 +159,7 @@ transform animated_outline():
     linear 1 u_width 0.0 u_step_start 0.1
     linear 1 u_width 10.0 u_step_start 0.1
     repeat
+
+transform animated_outline_bottle():
+    rotate 90
+    animated_outline()
