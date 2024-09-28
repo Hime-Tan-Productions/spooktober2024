@@ -24,8 +24,6 @@ uniform float u_mesh_pad;
         vertex_300="""
         """,
         fragment_functions="""
-# line 74 "outline_shader.rpy "
-
 // given a 0.0 to 1.0 distance, return alpha based on smoothstep values
 float get_step_alpha(float d, float s, float e)
 {
@@ -90,8 +88,6 @@ float opaque_distance(vec2 pos, float lod, sampler2D tex0, float threshold,
 }
         """,
         fragment_300="""
-# line 140 "outline_shader.rpy "
-
 vec2 padded_size = u_model_size;
 if (u_mesh_pad > 0.5) padded_size += vec2(u_width) * 2;
 
