@@ -38,13 +38,14 @@ label part3_start:
     
     hide vivienne
 
-    n "<wait for player to click on Stephanie's glasses>"
-
     $ renpy.sound.set_volume(0.0,2.0,"music")
     $ renpy.sound.set_volume(0.6,0.5,"ambience")
     play ambience "corpse flower mystic mix.mp3"
     
     p "Where's Stephanie? Something tells me this can't be good…"
+    p "Wait... are those her glasses, by the corpse plant?!"
+    n "<TODO: Show glasses here>"
+    $clue_stephanie = True
     v "No time for questions! Everyone out by sundown. My girl needs her beauty sleep."
     menu:
         p "What should I do?"
@@ -62,29 +63,46 @@ label ask_clues:
     menu:
         set chosen
         p "I need to know…"
-        "Did Moreno really quit?":
+        "Did Moreno really quit?" if clue_moreno:
             p "I think he may have died while trying to cover this story."
             jump ask_clues
-        "Where is Stephanie?":
+        "Where is Stephanie?" if clue_stephanie:
             p "I have a bad feeling I already know the answer."
             jump ask_clues
-        "What happened to Sister Garcia?":
+        "What happened to Sister Garcia?" if clue_nun:
             p "It seems as if Vivienne may have killed the poor nun to steal her plant."
             jump ask_clues
-        "How did Howard die?":
+        "How did Howard die?" if clue_howard:
             p "I'm sure he was poisoned at Vivienne's hands."
             jump ask_clues
     p "Stephanie mentioned that strange things happen at night."
 
-    menu:
-        "I should hide and wait for night.":
-            $chosen = []
-            jump ask_hide
-        "I should confront Vivienne.":
-            call suspicion(100, "death_vivienne_confrontation")
-        "I should call the police.":
-            call suspicion(100, "death_vivienne_call_police")
+    if not clue_moreno or not clue_stephanie or not clue_nun or not clue_howard:
+        p "I can't help feeling like I've missed something."
+        n "<TODO: What do we do here? Going to walk away ending for now.>"
+        jump ending_walk_away
+    else:
+        menu:
+            "I should hide and wait for night.":
+                jump ask_hide
+            "I should confront Vivienne.":
+                call suspicion(100, "death_vivienne_confrontation")
+            "I should call the police.":
+                call suspicion(100, "death_vivienne_call_police")
 
 label ask_hide:
-    p "I need to find a spot where nobody will find me."
-    jump corpse_plant_room
+    p "I should walk around and find a place to hide while no one is looking."
+    menu:
+        set chosen
+        "Is there a place where no one will see me?"
+        "Behind the corpse flower.":
+            p "Am I crazy? I'll pass out from the smell!"
+            jump ask_hide
+        "Behind the banana tree.":
+            jump part4_start
+        "In the koi pond.":
+            p "My clothes will get wet!"
+            jump ask_hide
+        "Just hide in plain sight.":
+            p "What am I supposed to do, put a flower pot in front of my face? Vivienne will see me right away!"
+            jump ask_hide
