@@ -1,5 +1,5 @@
 screen mansion_exterior():
-        imagebutton at animated_outline:
+        imagebutton:
             xalign 0.5
             yalign 0.5
             idle "doors"

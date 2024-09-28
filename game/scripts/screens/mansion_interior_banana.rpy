@@ -22,8 +22,8 @@ screen mansion_interior_banana():
                 yalign 0.5
                 idle "hat"
                 action Jump("part1_meet_steph")
-    elif part == 2 and not clue_howard:
-        imagebutton at animated_outline:
+    elif part == 2:
+        imagebutton:
             xalign 0.4
             yalign 0.4
             idle "bottle"

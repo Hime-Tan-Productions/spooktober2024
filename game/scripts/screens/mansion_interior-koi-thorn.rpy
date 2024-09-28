@@ -33,18 +33,16 @@ screen mansion_interior_koi_thorn():
                 idle "vivienne full_day"
                 action Jump("part1_meet_viv")
     if part == 2:
-        if not clue_moreno:
-            imagebutton at animated_outline:
-                xalign 0.25
-                yalign 0.75
-                idle "watch"
-                action Jump("part2_find_watch")
-        if not clue_nun:
-            imagebutton at animated_outline:
-                xalign 0.25
-                yalign 0.25
-                idle "rosary"
-                action Jump("part2_find_rosary")
+        imagebutton:
+            xalign 0.25
+            yalign 0.75
+            idle "watch"
+            action Jump("part2_find_watch")
+        imagebutton:
+            xalign 0.25
+            yalign 0.25
+            idle "rosary"
+            action Jump("part2_find_rosary")
         if int_corpse_flower and int_banana_tree:
             imagebutton:
                 xalign 0.5
