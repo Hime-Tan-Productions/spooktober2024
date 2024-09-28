@@ -19,7 +19,6 @@ label part2_viv_banana_tree_interview:
                     n "These aren't the gardening tips I was hoping for."
                     n "Maybe I should learn more about Howard."
                 "What is cowardly about seeds?":
-                    $heard_cowardly_about_seeds = True
                     call suspicion(-10)
                     v "Seeds are for the weak. I'm willing to go the extra mile for my plants."
                     menu:
@@ -51,14 +50,4 @@ label part2_bt_howard:
             call suspicion(100, "death_banana")
         "What is your favorite thing about Howard's banana tree?":
             v "I've added my own special touch to the tree… it gives the bananas a little extra flavor."
-    if not heard_cowardly_about_seeds:
-        p "What is cowardly about seeds?"
-        menu:
-            v "Seeds are for the weak. I'm willing to go the extra mile for my plants."
-            "How do you grow your plants then?":
-                call suspicion(25, "death_banana")
-                v "Ask me about my trade secrets one more time and you'll regret it."
-            "Why didn't Howard have the guts?":
-                call suspicion(-10)
-                v "My Howard never saw eye-to-eye with me! I don't have to worry about that now though."
     jump banana_room

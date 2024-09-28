@@ -25,7 +25,6 @@ label start:
     $met_stephanie = False
 
     $part2_stephanie_conv = False
-    $heard_cowardly_about_seeds = False
 
     $int_corpse_flower = False
     $int_crown_of_thorns = False
