@@ -40,19 +40,7 @@ screen mansion_interior_koi_thorn():
             yalign 0.25
             idle "rosary"
             action Jump("part2_find_rosary")
-        if not int_koi_pond:
-            imagebutton:
-                xalign 0.75
-                yalign 0
-                idle "vivienne full_day"
-                action Jump("part2_viv_koi_pond_interview")
-        elif not int_crown_of_thorns:
-            imagebutton:
-                xalign 0.75
-                yalign 0
-                idle "vivienne full_day"
-                action Jump("part2_viv_crown_of_thorns_interview")
-        elif int_corpse_flower and int_banana_tree:
+        if int_corpse_flower and int_banana_tree:
             imagebutton:
                 xalign 0.5
                 yalign 0

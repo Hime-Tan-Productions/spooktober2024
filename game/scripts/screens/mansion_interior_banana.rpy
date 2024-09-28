@@ -28,9 +28,3 @@ screen mansion_interior_banana():
             yalign 0.4
             idle "bottle"
             action Jump("part2_found_bottle")
-        if not int_banana_tree:
-            imagebutton:
-                xalign 0.75
-                yalign 0
-                idle "vivienne full_day"
-                action Jump("part2_viv_banana_tree_interview")
