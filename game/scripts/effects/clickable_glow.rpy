@@ -1,59 +1,9 @@
 # modified from https://github.com/RenpyRemix/outline-shader/blob/main/game/outline_shader.rpy
 # MIT license
 
+# fixed compatibility with partially alpha'd images by changing baked-in threshold. It should really be an arg.
+
 define config.gl2 = True
-
-label outline_example:
-    jump animated
-
-label animated:
-    show bottle at animated_outline():
-        xcenter 0.15
-        ycenter 0.4
-
-    show coins as girl2 at animated_outline():
-        xcenter 0.3
-        ycenter 0.4
-
-    show rosary as girl3 at animated_outline():
-        xcenter 0.45
-        ycenter 0.4
-
-    show glasses as girl4 at animated_outline():
-        xcenter 0.6
-        ycenter 0.4
-
-    show watch as girl5 at animated_outline():
-        xcenter 0.75
-        ycenter 0.4
-    pause 
-
-    return
-
-label outline:
-    show bottle at outline():
-        xcenter 0.15
-        ycenter 0.4
-
-    show coins as girl2 at outline():
-        xcenter 0.3
-        ycenter 0.4
-
-    show rosary as girl3 at outline():
-        xcenter 0.45
-        ycenter 0.4
-
-    show glasses as girl4 at outline():
-        xcenter 0.6
-        ycenter 0.4
-
-    show watch as girl5 at outline():
-        xcenter 0.75
-        ycenter 0.4
-    pause 
-
-    return
-
 
 init python:
 
@@ -69,9 +19,6 @@ uniform float u_width;
 uniform float u_step_start;
 uniform float u_step_end;
 uniform vec4 u_color;
-uniform vec4 u_far_color;
-uniform vec4 u_low_color;
-uniform float u_low_color_fade;
 uniform float u_mesh_pad;
         """,
         vertex_300="""
@@ -162,13 +109,8 @@ if (gl_FragColor.a < 0.01) {
         // Now we can do the sqrt
         float dist = sqrt(near) / u_width;
         float color_dist = (dist - u_step_start) / (u_step_end - u_step_start);
-        vec4 color = mix(u_color, u_far_color, color_dist);
+        vec4 color = u_color;
         float alpha = get_step_alpha(dist, u_step_start, u_step_end);
-        if (u_low_color != u_color && alpha < 0.99) {
-            color = (u_low_color_fade > 0.5) ? 
-                mix(u_low_color, color, clamp(alpha * alpha, 0.0, 1.0)) : 
-                u_low_color;
-        }
         alpha *= u_color.a;
         // this pixel should be altered
         if (gl_FragColor.a > 0.05 && alpha > 0.05) {
@@ -193,11 +135,6 @@ if (gl_FragColor.a < 0.01) {
 ## threshold: the minimum alpha level to count as opaque when finding 
 ##            the nearest opaque pixel
 ## color: the primary colour of the outline
-## far_color: secondary colour
-##            if set, this is the colour furthest from the image
-## low_color: secondary colour
-##            if set, this is the colour through the inner/outer steps
-## low_color_fade: whether to fade the primary colour into the low_color
 ## step_start: proportion of the width to begin a smooth up-step at
 ##             (if this plus (1.0 - step_end) is less than 0.0 then no inner
 ##             step will be shown)
@@ -208,9 +145,6 @@ transform outline(
         width=10.0, 
         threshold=0.01, 
         color="#FFF", 
-        far_color=None,
-        low_color=None,
-        low_color_fade=True,
         step_start=0.0, 
         step_end=1,
         mesh_pad=True):
@@ -222,9 +156,6 @@ transform outline(
     u_step_start float(step_start)
     u_step_end min(1.0, max(0.0, float(step_end)))
     u_color Color(color).rgba
-    u_far_color (Color(far_color).rgba if far_color else Color(color).rgba)
-    u_low_color (Color(low_color).rgba if low_color else Color(color).rgba)
-    u_low_color_fade (1.0 if low_color_fade else 0.0)
     u_mesh_pad (1.0 if mesh_pad else 0.0)
 
 transform animated_outline():
