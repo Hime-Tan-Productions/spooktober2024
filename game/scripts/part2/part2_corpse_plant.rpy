@@ -66,6 +66,7 @@ label part2_viv_aroma:
     n "This woman seems oddly happy about death and rotting flesh."
     menu:
         "It smells wonderful!":
+            call suspicion(-10)
             v "I agree! I'd bottle it for perfume if I could!"
             p "What a splendid idea!"
         "Why do you grow this flower if it smells so bad?":
@@ -95,11 +96,12 @@ label part2_viv_infrequent_blooms:
             menu:
                 v "No. I have experienced this beauty before."
                 "When did the flower last bloom?":
+                    call suspicion(25, "death_corpse_plant")
                     menu:
                         v "Why focus on the past? You have the privilege of seeing this marvel in the present!"
                         "Right. I'm grateful for the honor.":
-                            v "In that case, I'd love to show you the rest of my plants!"
                             call suspicion(-10)
+                            v "In that case, I'd love to show you the rest of my plants!"
                         "Just trying to get my word count up for the article.":
                             call suspicion(25, "death_corpse_plant")
                             v "If word count is what you're after, I can show you the rest of my plants."

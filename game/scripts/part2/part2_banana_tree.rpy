@@ -35,12 +35,12 @@ label part2_viv_banana_tree_interview:
             menu:
                 v "I am! Howard never agreed with me on the best gardening methods."
                 "What did you disagree on?":
-                    call suspicion(25, "death_banana")
                     v "Howard was never as… innovative as I am."
-                "What are the best gardening methods?":
                     call suspicion(-10)
-                    "How dare you ask for my trade secrets!"
-                    "It's clear this woman has secrets of some sort. I doubt they all relate to plant care."
+                "What are the best gardening methods?":
+                    v "How dare you ask for my trade secrets!"
+                    call suspicion(25, "death_banana")
+                    n "It's clear this woman has secrets of some sort. I doubt they all relate to plant care."
     jump part2_bt_howard
 
 label part2_bt_howard:

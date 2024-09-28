@@ -16,13 +16,13 @@ label part2_stephanie_conv:
                             s "You're right. You should go."
         "I did! The plants are very peaceful.":
             s "I'm so happy to hear that. Please come back later to see the bloom."
-            s "You may notice so things happening at night that I can't explain."
+            s "You may notice some things happening at night that I can't explain."
         "It's definitely… interesting.":
             menu:
                 s "What did you find so interesting?"
-                "Your boss":
+                "Your boss.":
                     s "You should go before she sees me talking to you."
-                    s "She may be the cause of some strange things that happen at night"
+                    s "She may be the cause of some strange things that happen at night!"
                 "The plants.":
                     menu:
                         s "The plants are more interesting at night. They have a way of coming alive."
@@ -36,8 +36,8 @@ label part2_stephanie_conv:
     menu:
         s "Don't try to speak to me again you rude journalist!"
         "Are you OK?":
-            "No! Hurry, before she sees you!"
+            s "No! Hurry, before she sees you!"
         "Hey! What was that for?":
-            "I told you to scram!"
+            s "I told you to scram!"
     n "You leave, just before Vivienne finds Stephanie."
     jump part3_start
