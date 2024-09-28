@@ -44,4 +44,5 @@ label start:
     scene black with fade
     #show screen journal_tabs with moveinleft
     show screen suspicion_bar with moveintop
+    jump outline_example
     jump intro
