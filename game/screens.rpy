@@ -366,16 +366,21 @@ screen main_menu():
     use navigation
 
     if gui.show_name:
-
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
+            text "[config.name!t]" at truecenter:
                 style "main_menu_title"
 
-            text "[config.version]":
+            text "\nby Hime-Tan Productions\n\n\n\n\n\n\n" at truecenter
+            image "spooktoberlogo":
+                xalign 0.5
+                yalign 1.0
+        fixed:
+            text "Version [config.version]":
                 style "main_menu_version"
-
+                xalign 1.0
+                yalign 1.0
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -390,10 +395,10 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
+    xalign 0.5
+    xoffset 200
     xmaximum 1200
-    yalign 1.0
+    yalign 0.25
     yoffset -30
 
 style main_menu_text:
