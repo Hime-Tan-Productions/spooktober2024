@@ -41,7 +41,7 @@ label start:
     # if debug sus controls are needed
     show screen debug_screen
 
-    scene white
+    scene black
     #show screen journal_tabs with moveinleft
     show screen suspicion_bar with moveintop
     jump intro
