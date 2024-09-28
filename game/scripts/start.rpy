@@ -36,6 +36,8 @@ label start:
     $clue_nun = False
     $clue_howard = False
 
+    $saw_koi_thorns_hide_choices = False
+
     # if debug sus controls are needed
     show screen debug_screen
 

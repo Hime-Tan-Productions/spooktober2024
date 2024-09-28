@@ -1,7 +1,7 @@
 screen mansion_interior_corpse_plant():
     $left = False
 
-    if part == 2:
+    if part == 2 or part == 3:
         if int_corpse_flower:
             $left = True        
         else:
