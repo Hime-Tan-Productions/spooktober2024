@@ -3,7 +3,7 @@
 
 # fixed compatibility with partially alpha'd images by changing baked-in threshold. It should really be an arg.
 
-#define config.gl2 = True
+define config.gl2 = True
 
 init python:
 
@@ -62,10 +62,16 @@ bool find_opaque(float x, float y, vec2 pos, vec2 pxo, float lod, sampler2D tex0
 float opaque_distance(vec2 pos, float lod, sampler2D tex0, float threshold, 
                       float u_width, vec2 pixel_size, float max_dist) {
     float nearest = 0.0;
-    const float MAX_ITERS = 100.0;
+    const float MAX_ITERS = 10.0;
     for (float x = 1.0; x <= MAX_ITERS; x += 1.0) {
+        if (x > u_width){
+            break;
+        }
         float x_dist = pow(x, 2.0);
         for (float y = 0.0; y <= MAX_ITERS; y += 1.0) {
+            if (y > x){
+                break;
+            }
             float d = pow(y, 2.0) + x_dist;
             if (nearest > 0.1) max_dist = nearest;
             if (d > max_dist) break;
@@ -148,7 +154,7 @@ transform outline(
     mesh True
     mesh_pad (False if not mesh_pad else (int(width),) * 4)
     shader "remix.smoothstep_outline"
-    u_width float(width)
+    u_width float(5)
     u_threshold float(threshold)
     u_step_start float(step_start)
     u_step_end min(1.0, max(0.0, float(step_end)))
@@ -157,8 +163,8 @@ transform outline(
 
 transform animated_outline():
     outline()
-    linear 1 u_width 0.0 u_step_start 0.1
-    linear 1 u_width 10.0 u_step_start 0.1
+    linear 1.5 u_width 0.1 u_step_start 0.1
+    linear 1.5 u_width 5.0 u_step_start 0.1
     repeat
 
 transform animated_outline_bottle():
