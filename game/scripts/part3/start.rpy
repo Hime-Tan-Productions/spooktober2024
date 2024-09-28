@@ -86,18 +86,5 @@ label ask_clues:
             call suspicion(100, "death_vivienne_call_police")
 
 label ask_hide:
-    p "I should walk around and find a place to hide while no one is looking."
-    menu:
-        set chosen
-        "Is there a place where no one will see me?"
-        "Behind the corpse flower.":
-            p "Am I crazy? I'll pass out from the smell!"
-            jump ask_hide
-        "Behind the banana tree.":
-            jump part4_start
-        "In the koi pond.":
-            p "My clothes will get wet!"
-            jump ask_hide
-        "Just hide in plain sight.":
-            p "What am I supposed to do, put a flower pot in front of my face? Vivienne will see me right away!"
-            jump ask_hide
+    p "I need to find a spot where nobody will find me."
+    jump corpse_plant_room

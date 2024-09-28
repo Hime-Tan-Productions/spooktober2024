@@ -8,6 +8,9 @@ screen mansion_interior_koi_thorn():
     if part == 2:
         $left = True
         $right = True
+    if part == 3:
+        $left = True
+        $right = True
 
     if left:
             imagebutton:

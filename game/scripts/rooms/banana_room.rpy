@@ -23,4 +23,18 @@ label banana_room:
                     jump part2_viv_banana_tree_interview
                 "Look around":
                     pass
+
+    elif part == 3:
+        jump banana_hide_choices
     call screen mansion_interior_banana
+
+label banana_hide_choices:
+    menu: 
+        n "Where should I hide?"
+        "Behind the banana tree.":
+            p "That's right! Stephanie said she would hide from Vivienne there!"
+            p "Now to wait for night."
+            jump part4_start
+        "Somewhere else.":
+            jump banana_room
+

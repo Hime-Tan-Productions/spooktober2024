@@ -12,4 +12,21 @@ label koi_thorns_room:
                     jump part2_viv_crown_of_thorns_interview
                 "Look around":
                     pass
+    elif part == 3 and not saw_koi_thorns_hide_choices:
+        $choices = []
+        jump koi_thorns_hide_choices
     call screen mansion_interior_koi_thorn
+
+label koi_thorns_hide_choices:
+    menu: 
+        set choices
+        n "Where should I hide?"
+        "In the koi pond":
+            p "Am I crazy? I'll pass out from the smell!"
+            jump koi_thorns_hide_choices
+        "Among the crown of thorns.":
+            p "My clothes will get wet!"
+            jump koi_thorns_hide_choices
+        "Somewhere else.":
+            $saw_koi_thorns_hide_choices = True
+            jump koi_thorns_room

@@ -1,7 +1,7 @@
 screen mansion_interior_banana():
     $right = False
 
-    if part == 1 or part == 2:
+    if part == 1 or part == 2 or part == 3:
         $right = True
 
     if right:
