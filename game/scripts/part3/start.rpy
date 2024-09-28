@@ -74,7 +74,6 @@ label ask_clues:
         "How did Howard die?":
             p "I'm sure he was poisoned at Vivienne's hands."
             jump ask_clues
-    p "I have a bad feeling that I know the answer."
     p "Stephanie mentioned that strange things happen at night."
 
     menu:

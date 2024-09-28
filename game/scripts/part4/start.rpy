@@ -8,9 +8,9 @@ label part4_start:
     play music "moody progression (halloween ambience).mp3"
     scene bg corpse_plant_night with fade
     $ renpy.sound.set_volume(1.0,0.0,"sound")
-    p "Night falls. The stench of the corpse plant is unbearable."
-    p "But I can't leave. Not now. I have to know."
-    p "The smell is making me delirious. I stumble out from behind the plant toward the corpse plant."
+    n "Night falls. The stench of the corpse plant is unbearable."
+    n "I can't leave. Not now. I have to know."
+    n "The smell is making me delirious. I stumble out from behind the tree toward the corpse plant."
 
     s "Get out! She sees everything! She knows everything!"
     p "I think I heard something strange…"
