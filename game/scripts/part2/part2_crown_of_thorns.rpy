@@ -4,9 +4,9 @@ label part2_viv_crown_of_thorns_interview:
     v "This here is my Crown of Thorns! I bred it to have the sharpest thorns of any plant in the world!"
     menu:
         "How do you know the thorns are the sharpest?":
-            v "Would you like to find out?"
             call suspicion(25, "death_crown_of_thorns")
             menu:
+                v "Would you like to find out?"
                 "Yes":
                     call suspicion(100, "death_crown_of_thorns")
                 "No":
