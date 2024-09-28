@@ -62,8 +62,14 @@ label part4_start:
     n "Vivienne lunges forward to tackle you, but you duck first."
     p "This one's for Stephanie!"
     $ renpy.sound.set_volume(1.0,0.0,"sound")
+
+    hide vivienne
+    hide screen suspicion_bar
+    scene bg vivienne_death with fade
+
     play sound "vivenne death 2.mp3" noloop
     n "Vivienne screams as you toss her into the jaws of the corpse flower."
+
     n "Her screams fill the greenhouse as she is ripped apart by her precious creation."
     n "The plant licks up every last bit of her flesh with its giant tongue and lets out a loud belch."
     $ renpy.sound.set_volume(1.0,0.0,"noise")
