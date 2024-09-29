@@ -1,4 +1,5 @@
 label part1_meet_viv:
+    play vo "voices/Vivienne/viv_2_yoshi_normal_2.mp3" noloop
     show vivienne neutral_armup
     pause
     if not met_vivienne:
@@ -28,8 +29,10 @@ label part1_viv_flower_questions:
         v "Why would you do such a thing! Don't you know it's rude to show up unannounced?"
         "I'm sorry. I know this time is difficult for you. I'm sorry to hear about your husband.":
             show vivienne angry_armup
+            play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop
             call suspicion(25, "death_corpse_plant")
             v "What about my husband? Would you be asking me these questions if I were a man? My plants bloom better than ever with him gone!"
+            $ renpy.sound.set_volume(0.0,0.0,"vo")
             jump part1_viv_see_flower
         "I would have called earlier, but my boss cut the phone cord when he was angry.":
             jump part1_viv_laugh
@@ -55,6 +58,7 @@ label part1_viv_see_flower:
     v "You couldn't have come at a worse time. I have so much to prepare for tonight!"
     v "Stephanie! Stephanie! Where's that lazy girl when you need her?"
     "Go find my good-for-nothing employee and she will show you around until I'm ready."
+    $ renpy.sound.set_volume(1.0,0.0,"vo")
     jump part1_viv_end
 
 label part1_viv_end:

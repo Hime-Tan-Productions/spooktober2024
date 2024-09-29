@@ -1,10 +1,12 @@
 label part1_meet_steph:
     $met_stephanie = True
+    $ renpy.sound.set_volume(1.0,0.0,"vo")
     $ renpy.sound.set_volume(0.0,0.5,"other")
     show stephanie neutral_lookingdown
     pause
     p "Hello?"
     show stephanie scared
+    play vo "voices/Stephanie/steph-ExcuseMe-003.mp3" noloop
     s "Oh heavens! I didn't know someone else was here."
     p "Yes, Vivienne told me to come find you. I could barely see you hiding behind that tree!"
     show stephanie neutral_lookingdown_handsup
@@ -49,6 +51,7 @@ label steph_nervous:
 
 label steph_ask_hiding:
     show stephanie scared
+    play vo "voices/Stephanie/steph-Groan-004.mp3" noloop
     s "I should get back to work!"
     jump part1_steph_end
 
@@ -91,6 +94,7 @@ label steph_ask_working:
 
 label steph_ask_ways:
     show stephanie scared
+    play vo "voices/Stephanie/steph-Groan-004.mp3" noloop
     s "Oh no! I didn't meant that. I think I've said too much."
     s "I have to get back to work."
     jump part1_steph_end
@@ -108,6 +112,7 @@ label steph_ask_favorite:
 
 label part1_steph_scent:
     show stephanie neutral_lookingdown_handsup
+    play vo "voices/Stephanie/steph-Groan-004.mp3" noloop
     s "Right."
     p "Guess I should go see the star of the show then."
     jump part1_steph_end
@@ -119,6 +124,7 @@ label part1_steph_journalist:
 
 label part1_steph_viv:
     show stephanie neutral_lookingdown_handsup
+    play vo "voices/Stephanie/steph-Groan-004.mp3" noloop
     s "I think you should go."
     jump part1_steph_end
 

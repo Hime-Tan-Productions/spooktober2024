@@ -5,7 +5,7 @@ label part2_koi_thorns:
 label part2_viv_koi_pond_interview:
     show vivienne happy_armup
     $int_koi_pond = True
-
+    play vo "voices/Vivienne/yoshi_ahh.mp3" noloop
     v "This here is the most tranquil part of my greenhouse!"
     v "I have some of the rarest koi species in my pond."
     n "Dew drops cover the lily pads on the water. The dew drops are perfectly round."
