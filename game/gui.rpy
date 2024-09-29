@@ -25,14 +25,14 @@ define config.check_conflicting_properties = True
 ## The colors of text in the interface.
 
 ## An accent color used throughout the interface to label and highlight text.
-define gui.accent_color = '#66cc00'
+define gui.accent_color = '#7af300'
 
 ## The color used for a text button when it is neither selected nor hovered. This will show in left column of main menu.
 define gui.idle_color = '#FF0000'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
-define gui.idle_small_color = '#4E1F1F'
+define gui.idle_small_color = '#EDD514'
 
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#209E2E'
@@ -190,6 +190,8 @@ define gui.page_button_borders = Borders(15, 6, 15, 6)
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 30
+##This adds outlines to text
+define gui.quick_button_text_outlines = [(3, "#00000080", 2, 2)]
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
 

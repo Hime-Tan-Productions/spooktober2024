@@ -8,6 +8,6 @@ screen suspicion_bar():
 
             right_bar Frame("images/suspicion-meter/suspicion_bg.png", 100, 100)
             left_bar Frame("images/suspicion-meter/suspicion_fg.png", 100, 100)
-        text "Suspicion" at truecenter
+        text "{b}{color=#ff0000}Suspicion{/color}{/b}" at truecenter
 
 
