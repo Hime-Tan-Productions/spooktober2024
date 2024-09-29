@@ -14,7 +14,7 @@ label banana_room:
             play other "in the grass.mp3"
             $ renpy.sound.set_volume(0.4,0.5,"other")
             p "Is something moving in the plants?"
-            p "It's... a person!"
+            p "It's… a person?"
             show stephanie full_day
             pause
             jump part1_meet_steph
