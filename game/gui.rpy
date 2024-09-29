@@ -51,9 +51,9 @@ define gui.hover_muted_color = '#3d7a00'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#ffffff'
-define gui.text_outlines = [ (1, "#00000080", 2, 2) ]
+define gui.text_outlines = [(2, "#00000080", 2, 2)]
 define gui.interface_text_color = '#ffffff'
-define gui.interface_text_outlines = [ (2, "#00000080", 2, 2) ]
+define gui.interface_text_outlines = [(2, "#00000080", 2, 2)]
 
 
 ## Fonts and Font Sizes ########################################################
@@ -192,10 +192,10 @@ define gui.page_button_borders = Borders(15, 6, 15, 6)
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 30
-##This adds outlines to text
-define gui.quick_button_text_outlines = [(3, "#00000080", 2, 2)]
 define gui.quick_button_text_idle_color = gui.idle_small_color
 define gui.quick_button_text_selected_color = gui.accent_color
+##This adds outlines to text
+define gui.quick_button_text_outlines = [(2, "#00000080", 2, 2)]
 
 ## You can also add your own customizations, by adding properly-named variables.
 ## For example, you can uncomment the following line to set the width of a
