@@ -577,6 +577,7 @@ screen about():
             text _("{a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].")
             text _("Sublime text")
             text _("paint.net")
+            text _("Logic Pro x")
             text _("\n")
 
             label "Assets Used"
@@ -601,9 +602,9 @@ screen credits():
 
             label "[config.name!t]"
             text "By Hime-Tan Productions"
-            text "Story by Cassie"
+            text "Story by Cassandra Lipp"
             text "Character art by {a=https://flavies.carrd.co/}Flavies{/a}"
-            text "BGM and SFX by Isabella"
+            text "BGM and SFX by Isabella Lipp (Isa B)"
             text "Environment art by Psybelle"
             text "Scripting by TJ"
             text "UX by Yoshi"

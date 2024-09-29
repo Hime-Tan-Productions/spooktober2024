@@ -22,11 +22,9 @@ label koi_thorns_hide_choices:
         set choices
         n "Where should I hide?"
         "In the koi pond":
-            p "Am I crazy? I'll pass out from the smell!"
-            jump koi_thorns_hide_choices
+            jump death_hide_koi
         "Among the crown of thorns.":
-            p "My clothes will get wet!"
-            jump koi_thorns_hide_choices
+            jump death_hide_cot
         "Somewhere else.":
             $saw_koi_thorns_hide_choices = True
             jump koi_thorns_room
