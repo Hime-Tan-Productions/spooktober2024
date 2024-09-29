@@ -14,7 +14,7 @@ label part2_moreno:
             $ renpy.sound.set_volume(0.0,0.0,"sound")
             play death "it was you (harsh horror reveal strings).mp3" loop
             $ renpy.sound.set_volume(1.0,0.0,"death")
-            call suspicion(100, "death_koi_pond")
+            call suspicion(100, "death_koi_pond") from _call_suspicion_44
         "Are you sure?":
             $ renpy.music.set_volume(0.0,1.0,"music")
             $ renpy.sound.set_volume(0.0,0.0,"other")
@@ -22,5 +22,5 @@ label part2_moreno:
             $ renpy.sound.set_volume(0.0,0.0,"sound")
             play death "it was you (harsh horror reveal strings).mp3" loop
             $ renpy.sound.set_volume(1.0,0.0,"death")
-            call suspicion(100, "death_koi_pond")
-            call suspicion(100, "death_koi_pond")
+            call suspicion(100, "death_koi_pond") from _call_suspicion_45
+            call suspicion(100, "death_koi_pond") from _call_suspicion_46

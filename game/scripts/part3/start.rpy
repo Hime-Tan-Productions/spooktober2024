@@ -88,9 +88,9 @@ label ask_clues:
             "I should hide and wait for night.":
                 jump ask_hide
             "I should confront Vivienne.":
-                call suspicion(100, "death_vivienne_confrontation")
+                call suspicion(100, "death_vivienne_confrontation") from _call_suspicion_53
             "I should call the police.":
-                call suspicion(100, "death_vivienne_call_police")
+                call suspicion(100, "death_vivienne_call_police") from _call_suspicion_54
 
 label ask_hide:
     $ renpy.sound.set_volume(0.9,0.5,"music")

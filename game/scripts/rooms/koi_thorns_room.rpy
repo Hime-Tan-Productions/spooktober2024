@@ -22,8 +22,8 @@ label koi_thorns_hide_choices:
     menu: 
         n "Where should I hide?"
         "In the koi pond":
-            call suspicion(100, "death_hide_koi")
+            call suspicion(100, "death_hide_koi") from _call_suspicion_60
         "Among the crown of thorns.":
-            call suspicion(100, "death_hide_cot")
+            call suspicion(100, "death_hide_cot") from _call_suspicion_61
         "Somewhere else.":
             call screen mansion_interior_koi_thorn

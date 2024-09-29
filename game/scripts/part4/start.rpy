@@ -58,28 +58,28 @@ label part4_start:
     menu:
         v "You nosy journalist! How dare you be in here without my permission!"
         "I think your plant is talking!":
-            call suspicion(-10)
+            call suspicion(-10) from _call_suspicion_55
             show vivienne angry_armup
             play vo "voices/Vivienne/viv_1_yoshi_kodachi.mp3" noloop
             menu:
                 v "Of course it's talking! It tells me to feed her more, more! Every body brings a new bloom!"
                 "That's not what I heard.":
-                    call suspicion(25, "death_corpse_plant")
+                    call suspicion(25, "death_corpse_plant") from _call_suspicion_56
                     v "How dare you! This plant speaks only to me!"
                 "Is that where Stephanie went?":
-                    call suspicion(-10)
+                    call suspicion(-10) from _call_suspicion_57
                     show vivienne angry_armup
                     play vo "voices/Vivienne/viv_1_yoshi_mocking.mp3" noloop
                     v "Stephanie was a lousy botanist! Her blood will make my plants grow bigger and better than she ever could!"
         "How many people have you killed here?":
-            call suspicion(25, "death_corpse_plant")
+            call suspicion(25, "death_corpse_plant") from _call_suspicion_58
             show vivienne angry_armup
             v "That's none of your business! I should have you arrested for trespassing!"
         "You'll never get away with this!":
             play vo "voices/Vivienne/viv_1_yoshi_kodachi.mp3" noloop
             show vivienne angry_armup
             v "Of course I will! I always do! My girl needs to feed!"
-            call suspicion(100, "death_bad_end")
+            call suspicion(100, "death_bad_end") from _call_suspicion_59
 
     play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop        
     n "Vivienne lunges forward to tackle you, but you duck first."
