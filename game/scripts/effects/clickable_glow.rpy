@@ -124,7 +124,7 @@ if (gl_FragColor.a < 0.01) {
                     gl_FragColor.a / (gl_FragColor.a + alpha)), 
                 1.0) * (1.0, 1.0, 1.0, max(alpha, gl_FragColor.a));
         } else {
-            gl_FragColor = vec4(color * (1.0, 1.0, 1.0, alpha));
+            gl_FragColor = vec4(color * (1.0, 1.0, 1.0, 1.0));
         }
     }
 }
