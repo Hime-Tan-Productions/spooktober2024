@@ -35,14 +35,14 @@ screen mansion_interior_koi_thorn():
     if part == 2:
         if not clue_moreno:
             imagebutton at animated_outline:
-                xpos 278
-                ypos 794
+                xpos 281
+                ypos 789
                 idle "watch"
                 action Jump("part2_find_watch")
         if not clue_nun:
             imagebutton at animated_outline:
-                xpos 195
-                ypos 1007
+                xpos 197
+                ypos 1010
                 idle "rosary"
                 action Jump("part2_find_rosary")
         if int_corpse_flower and int_banana_tree:
