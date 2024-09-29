@@ -7,7 +7,7 @@ label part4_start:
     $ renpy.music.set_volume(1.0,0.0,"music")
     play music "moody progression (halloween ambience).mp3"
     scene bg corpse_plant_night with fade
-    $ renpy.sound.set_volume(1.0,0.0,"sound")
+    $ renpy.sound.set_volume(1.0,0.5,"sound")
     n "Night falls. The stench of the corpse plant is unbearable."
     n "I can't leave. Not now. I have to know."
     n "The smell is making me delirious. I stumble out from behind the tree toward the corpse plant."
@@ -97,4 +97,7 @@ label part4_start:
     n "The plant licks up every last bit of her flesh with its giant tongue and lets out a loud belch."
     $ renpy.sound.set_volume(1.0,0.0,"noise")
     play noise "burp.mp3" noloop
+    $ renpy.music.set_volume(0.0,3.0,"music")
+    $ renpy.music.set_volume(1.0,3.0,"ambience")
+    play ambience "garden trip hop esque groove with birds.mp3" loop 
     jump credits

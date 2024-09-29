@@ -4,6 +4,7 @@ label death_hide_cot:
     $ renpy.sound.set_volume(0.0,0.0,"other")
     $ renpy.sound.set_volume(0.0,0.0,"noise")
     $ renpy.sound.set_volume(0.0,0.0,"sound")
+    $ renpy.sound.set_volume(0.0,1.0,"ambience")
     play death "it was you (harsh horror reveal strings).mp3" loop
     $ renpy.sound.set_volume(1.0,0.0,"death")
     $ renpy.music.set_volume(1.0,0.0,"sound")

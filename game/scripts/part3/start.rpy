@@ -93,7 +93,7 @@ label ask_clues:
                 call suspicion(100, "death_vivienne_call_police")
 
 label ask_hide:
-    $ renpy.sound.set_volume(0.8,0.5,"music")
+    $ renpy.sound.set_volume(0.9,0.5,"music")
     $ renpy.sound.set_volume(0.0,0.5,"ambience")
     play music "moody progression (we have to hurry intensity).mp3" loop
     p "I need to find a spot where nobody will find me."
