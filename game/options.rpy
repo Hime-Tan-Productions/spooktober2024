@@ -200,7 +200,7 @@ init python:
     renpy.music.register_channel("noise", "sfx")
     renpy.music.register_channel("other", "sfx")
     renpy.music.register_channel("death", "sfx")
-    renpy.music.register_channel("vo", "sfx")
+    renpy.music.register_channel("vo", "voice")
 
 
 ## A Google Play license key is required to perform in-app purchases. It can be
