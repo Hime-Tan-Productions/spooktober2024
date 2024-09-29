@@ -1,6 +1,6 @@
 label suspicion(dmg, ending=None):
     if dmg > 0 and ending == None:
-        call debug("All positive sus increases must have an ending defined!")
+        call debug("All positive sus increases must have an ending defined!") from _call_debug
         return
     if dmg > 0 and suspicion < max_suspicion:
         play sus "sus sound up.mp3" noloop
