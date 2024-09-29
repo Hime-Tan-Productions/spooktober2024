@@ -63,6 +63,7 @@ define config.has_voice = True
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
+define config.main_menu_music = "slow piano chords with some spooky ambience.mp3"
 
 ## Transitions #################################################################
 ##

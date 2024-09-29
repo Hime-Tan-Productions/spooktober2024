@@ -13,6 +13,8 @@ label part1_meet_viv:
     jump part1_viv_qs
 
 label part1_viv_qs:
+    show vivienne angry_folded
+    play voice "voices/viv_4_yoshi_distain.mp3"
     menu:
         v "You're here too early for the bloom. Doors open to the public at 6 p.m."
         "Right. I thought I could ask you some questions about the flower beforehand!":
@@ -25,6 +27,7 @@ label part1_viv_flower_questions:
     menu:
         v "Why would you do such a thing! Don't you know it's rude to show up unannounced?"
         "I'm sorry. I know this time is difficult for you. I'm sorry to hear about your husband.":
+            show vivienne angry_armup
             call suspicion(25, "death_corpse_plant")
             v "What about my husband? Would you be asking me these questions if I were a man? My plants bloom better than ever with him gone!"
             jump part1_viv_see_flower
@@ -32,6 +35,7 @@ label part1_viv_flower_questions:
             jump part1_viv_laugh
 
 label part1_viv_laugh:
+    show vivienne happy_folded
     menu:
         v "Hahaha! What a fabulous idea!"
         "Laugh with her":
@@ -45,6 +49,7 @@ label part1_viv_couldnt_wait:
     jump part1_viv_see_flower
 
 label part1_viv_see_flower:
+    show vivienne angry_armup
     v "You couldn't have come at a worse time. I have so much to prepare for tonight!"
     v "Stephanie! Stephanie! Where's that lazy girl when you need her?"
     "Go find my good-for-nothing employee and she will show you around until I'm ready."

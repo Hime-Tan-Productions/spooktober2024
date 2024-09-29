@@ -4,6 +4,7 @@ label part1_meet_steph:
     show stephanie neutral_lookingdown
     pause
     p "Hello?"
+    show stephanie scared
     s "Oh heavens! I didn't know someone else was here."
     p "Yes, Vivienne told me to come find you. I could barely see you hiding behind that tree!"
     s "It's a good place to hide from Vivienne."
