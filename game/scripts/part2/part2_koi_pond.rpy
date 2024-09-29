@@ -14,7 +14,7 @@ label part2_viv_koi_pond_interview:
         
         n "Vivienne's koi pond creeps me out more than it calms me."
         "Is there anything else in the koi pond?":
-            show vivienne angry_folded
+            show vivienne happy_folded
             play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop
             v "Why don't you see for yourself? I'm done with stupid questions!  Stop ruining my peace."
             call suspicion(25, "death_koi_pond")
