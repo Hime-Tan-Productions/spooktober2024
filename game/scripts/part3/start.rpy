@@ -43,8 +43,7 @@ label part3_start:
     play ambience "corpse flower mystic mix.mp3"
     
     p "Where's Stephanie? Something tells me this can't be good…"
-    p "Wait... are those her glasses, by the corpse plant?!"
-    n "<TODO: Show glasses here>"
+    p "Wait… are those her glasses, by the corpse plant?!"
     $clue_stephanie = True
     v "No time for questions! Everyone out by sundown. My girl needs her beauty sleep."
     menu:
