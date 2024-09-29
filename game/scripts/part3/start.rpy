@@ -81,7 +81,6 @@ label ask_clues:
 
     if not clue_moreno or not clue_stephanie or not clue_nun or not clue_howard:
         p "I can't help feeling like I've missed something."
-        n "<TODO: What do we do here? Going to walk away ending for now.>"
         jump ending_walk_away
     else:
         menu:
