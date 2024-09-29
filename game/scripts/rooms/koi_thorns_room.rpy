@@ -22,9 +22,9 @@ label koi_thorns_hide_choices:
         set choices
         n "Where should I hide?"
         "In the koi pond":
-            jump death_hide_koi
+            call suspicion(100, "death_hide_koi")
         "Among the crown of thorns.":
-            jump death_hide_cot
+            call suspicion(100, "death_hide_cot")
         "Somewhere else.":
             $saw_koi_thorns_hide_choices = True
             jump koi_thorns_room
