@@ -5,6 +5,7 @@ label part2_corpse_plant:
 
 label part2_viv_corpse_plant_interview:
     $int_corpse_flower = True
+    show vivienne happy_armup
     menu:
         v "Here she is! Isn't she a beauty?"
         "Yes":
@@ -17,11 +18,15 @@ label part2_viv_corpse_plant_interview:
             jump part2_viv_odd
 
 label part2_viv_odd:
+    show vivienne vivienne angry_armup
     menu:
         v "Why would you say such a thing?"
         "I've never seen a flower so large.":
+            show vivienne happy_armup
             v "That's right! It's the largest corpse flower known to man. Even larger than those in the wild!"
+            show vivienne neutral_folded
             p "How does it grow larger than a corpse flower in the jungle?"
+            show vivienne angry_folded
             menu:
                 v "Do you doubt my abilities as a botanist?"
                 "Yes":
@@ -33,6 +38,7 @@ label part2_viv_odd:
                     jump part2_viv_aroma
 
         "The smell is very overpowering.":
+            show vivienne angry_folded
             v "I'll show you something powerful!"
             $ renpy.music.set_volume(0.0,1.0,"music")
             $ renpy.sound.set_volume(0.0,0.0,"other")
@@ -62,6 +68,7 @@ label part2_viv_scent:
 
 
 label part2_viv_aroma:
+    show vivienne neutral_folded_mouthopen
     v "The flower's aroma attracts creatures that feed on carcasses. Flesh flies, dung beetles, sweat bees. They can smell it a half mile away!"
     n "This woman seems oddly happy about death and rotting flesh."
     menu:

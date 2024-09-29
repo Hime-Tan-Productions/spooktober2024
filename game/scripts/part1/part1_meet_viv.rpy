@@ -7,14 +7,14 @@ label part1_meet_viv:
         jump part1_viv_see_flower
     "As a reporter, I have to keep my sources happy so that they'll open up to me."
     "Asking the wrong questions could make them not want to speak to me any further."
-
+    show vivienne angry_armup
     p "Hi! I'm here with The Greenville Gazette to cover your corpse flower bloom. It's nice to meet you!"
     n "You hold out your hand to shake Vivienne's but she does not return the gesture."
     jump part1_viv_qs
 
 label part1_viv_qs:
     show vivienne angry_folded
-    play voice "voices/viv_4_yoshi_distain.mp3"
+    play vo "voices/Vivienne/viv_4_yoshi_distain.mp3"
     menu:
         v "You're here too early for the bloom. Doors open to the public at 6 p.m."
         "Right. I thought I could ask you some questions about the flower beforehand!":
