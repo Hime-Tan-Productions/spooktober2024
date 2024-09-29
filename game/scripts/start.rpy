@@ -39,7 +39,7 @@ label start:
     $saw_koi_thorns_hide_choices = False
 
     # if debug sus controls are needed
-    show screen debug_screen
+    # show screen debug_screen
 
     scene black
     #show screen journal_tabs with moveinleft
