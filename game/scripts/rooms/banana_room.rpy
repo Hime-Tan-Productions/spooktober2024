@@ -47,5 +47,4 @@ label banana_hide_choices:
             $ renpy.sound.set_volume(0.0,2.0,"ambience")
             jump part4_start
         "Somewhere else.":
-            jump banana_room
-
+            call screen mansion_interior_banana
