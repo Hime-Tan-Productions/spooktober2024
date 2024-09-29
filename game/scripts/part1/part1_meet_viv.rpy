@@ -58,7 +58,6 @@ label part1_viv_see_flower:
     v "You couldn't have come at a worse time. I have so much to prepare for tonight!"
     v "Stephanie! Stephanie! Where's that lazy girl when you need her?"
     "Go find my good-for-nothing employee and she will show you around until I'm ready."
-    $ renpy.sound.set_volume(1.0,0.0,"vo")
     jump part1_viv_end
 
 label part1_viv_end:

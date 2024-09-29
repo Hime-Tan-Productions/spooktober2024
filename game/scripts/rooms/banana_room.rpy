@@ -23,6 +23,8 @@ label banana_room:
             menu:
                 n "I'm in the banana tree room."
                 "Ask Vivienne for an interview about the banana tree.":
+                    show vivienne angry_folded
+                    play vo "voices/Vivienne/viv_5_yoshi_irritated.mp3" noloop
                     n "I track down Vivienne."
                     jump part2_viv_banana_tree_interview
                 "Look around":
@@ -37,7 +39,12 @@ label banana_hide_choices:
         n "Where should I hide?"
         "Behind the banana tree.":
             p "That's right! Stephanie said she would hide from Vivienne there!"
+            $ renpy.sound.set_volume(1.0,0.0,"other")
+            play other "in the grass.mp3"
+            $ renpy.sound.set_volume(0.0,2.0,"other")
             p "Now to wait for night."
+            $ renpy.sound.set_volume(0.0,1.0,"other")
+            $ renpy.sound.set_volume(0.0,2.0,"ambience")
             jump part4_start
         "Somewhere else.":
             jump banana_room

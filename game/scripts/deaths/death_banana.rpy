@@ -31,4 +31,5 @@ label death_banana_cont:
     play sound "death gasp.mp3" noloop
     $ renpy.sound.set_volume(0.0,3.0,"death")
     $ renpy.music.set_volume(0.6,3.0,"music")
+    $ renpy.sound.set_volume(0.0,4.0,"noise")
     play music "garden trip hop esque groove with birds.mp3" loop 
