@@ -7,10 +7,9 @@ label intro:
     play sound "intro sfx 3.mp3"
     p "Nice to have a break from the newsroom for now… and the boss yelling at everyone."
     p "I'm upset that Moreno quit without notice too. But I'm not throwing coffee mugs at the secretary!"    
-    n "You reach into your pockets for your tape recorder, but remember that Moreno borrowed it and never returned it to you."
     play nature "ducks 2.mp3" loop
     $ renpy.sound.set_volume(0.5,0,"nature")   
-    p "Guess I'll have to write my notes down for now."
+    p "I'll have to take some notes."
     n "The Corpse Flower\nBy Asa Miller, Associate Managing Editor"
 
     p "At least with Moreno gone, I got a promotion! Now if only I'd get a raise too…"
