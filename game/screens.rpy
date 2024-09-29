@@ -608,6 +608,13 @@ screen credits():
             text "Environment art by Psybelle"
             text "Scripting by TJ"
             text "UX by Yoshi"
+            
+            label "\nVoices"
+            text "Cassandra Lipp as Stephanie"
+            text "<steve> as Howard"
+            text "<steve> as Moreno"
+            text "N. Sakurai as Sister Mary"
+            text "Yoshi as Vivienne"
 
 ## Load and Save screens #######################################################
 ##
