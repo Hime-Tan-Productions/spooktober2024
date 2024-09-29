@@ -200,6 +200,7 @@ init python:
     renpy.music.register_channel("noise", "sfx")
     renpy.music.register_channel("other", "sfx")
     renpy.music.register_channel("death", "sfx")
+    renpy.music.register_channel("sus", "sfx")
     renpy.music.register_channel("vo", "voice")
 
 
