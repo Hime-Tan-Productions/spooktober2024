@@ -11,7 +11,7 @@ label death_hide_koi:
     play sound "drowning.mp3" noloop
     n "As you dive into the koi pond, you discover that Vivienne wasn't fibbing about her koi pond being extra special."
     n "The koi rush at you with their razor-sharp teeth and tear apart your flesh."
-    show vivienne angry_folded
+    show vivienne happy_folded
     $ renpy.music.set_volume(0.9,0.0,"other")
     play other "vivienne laugh.mp3" noloop
     n "Your blood fills the koi pond as Vivienne watches in glee nearby."

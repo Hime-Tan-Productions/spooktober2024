@@ -95,8 +95,10 @@ label part4_start:
 
     n "Her screams fill the greenhouse as she is ripped apart by her precious creation."
     n "The plant licks up every last bit of her flesh with its giant tongue and lets out a loud belch."
+    window hide
     $ renpy.sound.set_volume(1.0,0.0,"noise")
     play noise "burp.mp3" noloop
+    pause 2.0
     $ renpy.music.set_volume(0.0,3.0,"music")
     $ renpy.music.set_volume(1.0,3.0,"ambience")
     play ambience "garden trip hop esque groove with birds.mp3" loop 

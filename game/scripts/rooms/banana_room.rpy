@@ -15,6 +15,7 @@ label banana_room:
             $ renpy.sound.set_volume(0.4,0.5,"other")
             p "Is something moving in the plants?"
             p "It's… a person?"
+            window hide
             show stephanie full_day
             pause
             jump part1_meet_steph
