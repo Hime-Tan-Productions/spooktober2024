@@ -372,15 +372,15 @@ screen main_menu():
             text "[config.name!t]" at truecenter:
                 style "main_menu_title"
 
-            text "\nby Hime-Tan Productions\n\n\n\n\n\n\n" at truecenter
+            text "\n\n\n\nby Hime-Tan Productions\n\n\n\n" at truecenter
             image "spooktoberlogo":
                 xalign 0.5
                 yalign 1.0
         fixed:
             text "Version [config.version]":
                 style "main_menu_version"
-                xalign 1.0
-                yalign 1.0
+                xalign 0.95
+                yalign 0.95
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -398,7 +398,7 @@ style main_menu_vbox:
     xalign 0.5
     xoffset 200
     xmaximum 1200
-    yalign 0.25
+    yalign 0.50
     yoffset -30
 
 style main_menu_text:
