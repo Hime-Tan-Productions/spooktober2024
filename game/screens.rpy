@@ -612,8 +612,8 @@ screen credits():
             label "\nVoices"
             text "Cassandra Lipp as Stephanie"
             text "N. Sakurai as Sister Mary"
-            text "Steve as Howard"
-            text "Steve as Moreno"
+            text "S. R. Osuna as Howard"
+            text "S. R. Osuna as Moreno"
             text "Yoshi as Vivienne"
 
 ## Load and Save screens #######################################################
