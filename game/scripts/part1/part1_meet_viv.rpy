@@ -14,7 +14,7 @@ label part1_meet_viv:
 
 label part1_viv_qs:
     show vivienne angry_folded
-    play vo "voices/Vivienne/viv_4_yoshi_distain.mp3"
+    play vo "voices/Vivienne/viv_4_yoshi_distain.mp3" noloop
     menu:
         v "You're here too early for the bloom. Doors open to the public at 6 p.m."
         "Right. I thought I could ask you some questions about the flower beforehand!":
@@ -36,6 +36,7 @@ label part1_viv_flower_questions:
 
 label part1_viv_laugh:
     show vivienne happy_folded
+    play vo "voices/Vivienne/viv_1_yoshi_mocking.mp3" noloop
     menu:
         v "Hahaha! What a fabulous idea!"
         "Laugh with her":
@@ -50,6 +51,7 @@ label part1_viv_couldnt_wait:
 
 label part1_viv_see_flower:
     show vivienne angry_armup
+    play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop
     v "You couldn't have come at a worse time. I have so much to prepare for tonight!"
     v "Stephanie! Stephanie! Where's that lazy girl when you need her?"
     "Go find my good-for-nothing employee and she will show you around until I'm ready."
