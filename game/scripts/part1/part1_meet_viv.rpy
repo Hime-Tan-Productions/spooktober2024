@@ -24,13 +24,13 @@ label part1_viv_qs:
             jump part1_viv_couldnt_wait
 
 label part1_viv_flower_questions:
-    call suspicion(20, "death_corpse_plant")
+    call suspicion(20, "death_corpse_plant") from _call_suspicion
     menu:
         v "Why would you do such a thing! Don't you know it's rude to show up unannounced?"
         "I'm sorry. I know this time is difficult for you. I'm sorry to hear about your husband.":
             show vivienne angry_armup
             play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop
-            call suspicion(25, "death_corpse_plant")
+            call suspicion(25, "death_corpse_plant") from _call_suspicion_1
             v "What about my husband? Would you be asking me these questions if I were a man? My plants bloom better than ever with him gone!"
             $ renpy.sound.set_volume(0.0,0.0,"vo")
             jump part1_viv_see_flower
@@ -43,10 +43,10 @@ label part1_viv_laugh:
     menu:
         v "Hahaha! What a fabulous idea!"
         "Laugh with her":
-            call suspicion(-10)
+            call suspicion(-10) from _call_suspicion_2
             jump part1_viv_see_flower
         "Don't laugh":
-            call suspicion(25, "death_corpse_plant")
+            call suspicion(25, "death_corpse_plant") from _call_suspicion_3
             jump part1_viv_see_flower
 
 label part1_viv_couldnt_wait:

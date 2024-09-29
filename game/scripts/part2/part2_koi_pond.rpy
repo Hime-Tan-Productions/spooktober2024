@@ -17,9 +17,9 @@ label part2_viv_koi_pond_interview:
             show vivienne angry_folded
             play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop
             v "Why don't you see for yourself? I'm done with stupid questions!  Stop ruining my peace."
-            call suspicion(25, "death_koi_pond")
+            call suspicion(25, "death_koi_pond") from _call_suspicion_40
         "What makes your koi so special?":
-            call suspicion(-10)            
+            call suspicion(-10) from _call_suspicion_41            
             show vivienne neutral_folded_mouthopen
             v "My koi are here to keep the peace."
             show vivienne angry_folded
@@ -37,12 +37,12 @@ label part2_koi_nice:
     menu:
         v "I know! Gives the greenhouse a little something extra."
         "I could stay here all day!":
-            call suspicion(25, "death_koi_pond")
+            call suspicion(25, "death_koi_pond") from _call_suspicion_42
             show vivienne angry_armup
             play vo "voices/Vivienne/viv_2_yoshi_tired.mp3" noloop
             v "I hope you'll be leaving soon."
         "It seems odd that everything in the greenhouse has something extra.":
-            call suspicion(-10)
+            call suspicion(-10) from _call_suspicion_43
             show vivienne happy_folded
             play vo "voices/Vivienne/yoshi_short_laugh_3.mp3" noloop
             v "Certainly! My greenhouse is the world's best plant collection!"
