@@ -14,19 +14,16 @@ label koi_thorns_room:
                     jump part2_viv_crown_of_thorns_interview
                 "Look around":
                     pass
-    elif part == 3 and not saw_koi_thorns_hide_choices:
-        $choices = []
+    elif part == 3:
         jump koi_thorns_hide_choices
     call screen mansion_interior_koi_thorn
 
 label koi_thorns_hide_choices:
     menu: 
-        set choices
         n "Where should I hide?"
         "In the koi pond":
             call suspicion(100, "death_hide_koi")
         "Among the crown of thorns.":
             call suspicion(100, "death_hide_cot")
         "Somewhere else.":
-            $saw_koi_thorns_hide_choices = True
-            jump koi_thorns_room
+            call screen mansion_interior_koi_thorn
