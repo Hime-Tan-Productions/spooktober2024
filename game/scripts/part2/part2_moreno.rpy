@@ -1,7 +1,10 @@
 label part2_moreno:
+    show vivienne angry_folded
     p "I'm sorry if I ask basic questions, Vivienne."
     p "You see, I'm not the first reporter from The Greenville Gazette to cover this story."
     p "Did my colleague Moreno contact you?"
+    show vivienne angry_armup
+    play vo "voices/Vivienne/viv_2_yoshi_groan.mp3" noloop
     menu:
         v "I've never heard such a name!"
         "His pocket watch is in your koi pond.":

@@ -3,10 +3,11 @@ label part1_start:
     scene bg koi_thorns
     $ renpy.sound.set_volume(0.0,0.1,"nature")
     stop sound
-    $ renpy.sound.set_volume(0.65,0.0,"ambience")
+    $ renpy.sound.set_volume(0.55,0.0,"ambience")
     play ambience "door 1.mp3" noloop
-    play nature "koi pond water noises.mp3" loop
     $ renpy.sound.set_volume(0.5,0.0,"nature")
+    play nature "koi pond water noises.mp3" loop
+    $ renpy.sound.set_volume(0.3,60.0,"nature")
     play other "heater sounds 5.mp3" loop
     $ renpy.sound.set_volume(0.25,0.0,"other")
     play noise "sprinkler system 2.mp3" loop

@@ -13,5 +13,6 @@ label death_bad_end:
     $ renpy.music.set_volume(0.9,0.0,"other")
     play other "death gasp.mp3" noloop
     $ renpy.sound.set_volume(0.0,3.0,"death")
+    $ renpy.music.set_volume(0.0,4.0,"other")
     $ renpy.music.set_volume(0.6,3.0,"music")
     play music "garden trip hop esque groove with birds.mp3" loop 

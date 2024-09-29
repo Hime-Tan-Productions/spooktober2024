@@ -24,28 +24,31 @@ label part3_start:
 
     p "With its petals fully bloomed, the air smells even more strongly of rotting meat, soiled laundry, and moldy cheese left in a garbage can to cook on a hot summer day."
     p "I'd be emptying my stomach in the ferns if I hadn't already."
-
-    show vivienne happy_armup
     
     $ renpy.sound.set_volume(0.0,2.0,"nature")
     
-    v "Ladies and gentleman, I present to you the eighth wonder of the world!"
+    play vo "voices/Vivienne/viv_my_beautiful_flower_2.mp3" noloop
+    show vivienne happy_folded
+    v "Ladies and gentlemen, I present to you the eighth wonder of the world!"
     
     $ renpy.sound.set_volume(0.8,0.0,"other")
     play other "applause 2.mp3" noloop
     v "Here you see that my girl has done it again. Her third bloom this year! I see many more in her future."
+    show vivienne happy_armup
     v "Take as many photos as you wish! Make sure you get both our good sides!"
     
     hide vivienne
 
-    $ renpy.sound.set_volume(0.0,2.0,"music")
+    $ renpy.sound.set_volume(0.0,4.0,"music")
     $ renpy.sound.set_volume(0.6,0.5,"ambience")
     play ambience "corpse flower mystic mix.mp3"
     
     p "Where's Stephanie? Something tells me this can't be good…"
     p "Wait… are those her glasses, by the corpse plant?!"
     $clue_stephanie = True
+    show vivienne angry_armup
     v "No time for questions! Everyone out by sundown. My girl needs her beauty sleep."
+    hide vivienne
     menu:
         p "What should I do?"
         "I have enough for my story. Time to move on.":
@@ -90,5 +93,8 @@ label ask_clues:
                 call suspicion(100, "death_vivienne_call_police")
 
 label ask_hide:
+    $ renpy.sound.set_volume(0.9,0.5,"music")
+    $ renpy.sound.set_volume(0.0,0.5,"ambience")
+    play music "moody progression (we have to hurry intensity).mp3" loop
     p "I need to find a spot where nobody will find me."
     jump corpse_plant_room

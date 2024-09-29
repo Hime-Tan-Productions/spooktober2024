@@ -63,6 +63,7 @@ define config.has_voice = True
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
+define config.main_menu_music = "slow piano chords with some spooky ambience.mp3"
 
 ## Transitions #################################################################
 ##
@@ -199,6 +200,7 @@ init python:
     renpy.music.register_channel("noise", "sfx")
     renpy.music.register_channel("other", "sfx")
     renpy.music.register_channel("death", "sfx")
+    renpy.music.register_channel("vo", "voice")
 
 
 ## A Google Play license key is required to perform in-app purchases. It can be

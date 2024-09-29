@@ -7,6 +7,7 @@ label part2_find_watch:
     menu:
         p "Now I wonder if he really quit…"
         "Ask about Moreno.":
+            play vo "voices/Vivienne/viv_5_yoshi_exasperated.mp3" noloop
             jump part2_moreno
         "Don't ask about Moreno.":
             jump koi_thorns_room

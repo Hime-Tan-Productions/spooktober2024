@@ -8,6 +8,8 @@ label koi_thorns_room:
                 "Ask Vivienne for an interview about the koi pond." if not int_koi_pond:
                     jump part2_viv_koi_pond_interview
                 "Ask Vivienne for an interview about the crown of thorns." if not int_crown_of_thorns:
+                    show vivienne neutral_folded_mouthopen
+                    play vo "voices/Vivienne/what_do_you_want_2.mp3" noloop
                     n "I track down Vivienne."
                     jump part2_viv_crown_of_thorns_interview
                 "Look around":
