@@ -14,7 +14,7 @@ label part1_meet_viv:
 
 label part1_viv_qs:
     show vivienne angry_folded
-    play voice "voices/viv_4_yoshi_distain.mp3"
+    play vo "voices/Vivienne/viv_4_yoshi_distain.mp3" noloop
     menu:
         v "You're here too early for the bloom. Doors open to the public at 6 p.m."
         "Right. I thought I could ask you some questions about the flower beforehand!":
