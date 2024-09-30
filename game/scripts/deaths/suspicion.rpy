@@ -10,9 +10,11 @@ label suspicion(dmg, ending=None):
     if suspicion < 0:
         $suspicion = 0
     if suspicion >= max_suspicion and ending != None:
-        $suspicion = max_suspicion
-        scene black with fade
-        hide screen suspicion_bar with moveouttop
+        if suspicion != max_suspicion:
+            $suspicion = max_suspicion
+            pause 1
+        hide screen suspicion_bar
+        scene black
         show vivienne angry_folded
         $renpy.call("" + ending)
         show red_flash
