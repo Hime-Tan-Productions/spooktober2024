@@ -12,11 +12,12 @@ label suspicion(dmg, ending=None):
     if suspicion >= max_suspicion and ending != None:
         if suspicion != max_suspicion:
             $suspicion = max_suspicion
-            pause 1
+            pause 1.25
         hide screen suspicion_bar
         scene black
         show vivienne angry_folded
         $renpy.call("" + ending)
+        window hide
         show red_flash
         pause 1
         call screen game_over
