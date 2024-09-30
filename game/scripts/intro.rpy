@@ -5,6 +5,7 @@ label intro:
     $ renpy.music.set_volume(0.1,14.0,"music")
     $ renpy.sound.set_volume(0.06,0,"sound")
     play sound "intro sfx 3.mp3"
+
     p "Nice to have a break from the newsroom for now… and the boss yelling at everyone."
     p "I'm upset that Moreno quit without notice too. But I'm not throwing coffee mugs at the secretary!"    
     play nature "ducks 2.mp3" loop
@@ -19,5 +20,7 @@ label intro:
     p "Vivienne has been running the greenhouse since her husband died earlier this year."
     p "It's hard to write with my palms so sweaty. Why do I always get so nervous before interviews? I've done hundreds of them."
     p "I just have to talk to the greenhouse owner. This should be a simple story."
+    show screen suspicion_bar
+
 
     call screen mansion_exterior
